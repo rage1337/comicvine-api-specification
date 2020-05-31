@@ -43,17 +43,17 @@ properties:
   limit:
     $ref: "../openapi.yml#/components/parameters/limit"
   offset:
-    description: The value of the offset filter specified, or 0 if not specified
+    $ref: "../openapi.yml#/components/parameters/limit"
   results:
     description: Zero or more items that match the filters specified
     oneOf:
-      - $ref: "./volume.yml"
-      - $ref: "./issue.yml"
-      - $ref: "./person.yml"
-      - $ref: "./multipleResults.yml"
+      - $ref: ./volume.yml
+      - $ref: ./issue.yml
+      - $ref: ./person.yml
+      - $ref: ./multipleResults.yml
       - type: array
         items:
           oneOf:
-            - $ref: "./volume.yml"
-            - $ref: "./issue.yml"
-            - $ref: "./person.yml"
+            - $ref: ./volume.yml
+            - $ref: ./issue.yml
+            - $ref: ./person.yml
