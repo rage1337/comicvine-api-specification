@@ -41,7 +41,7 @@ properties:
       minimum: 0
       example: 12
   limit:
-    $ref: "#/components/parameters/limit"
+    $ref: "../openapi.yml#/components/parameters/limit"
   offset:
     description: The value of the offset filter specified, or 0 if not specified
   results:
