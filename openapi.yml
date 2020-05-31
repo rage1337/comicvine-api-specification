@@ -1,7 +1,7 @@
 openapi: "3.0.3"
 info:
   description: OpenAPI specification for the ComicVine API
-  version: "0.1.0"
+  version: "1.0"
   title: ComicVine API
 externalDocs:
   description: Official Documentation
