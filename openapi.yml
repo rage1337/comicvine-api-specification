@@ -27,7 +27,23 @@ paths:
   # TODO
   #  /episodes:
   # TODO
-  #  /issue:
+  /issue/{id}:
+    get:
+      summary: Get a particular issue
+      operationId: get_issue
+      parameters:
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
+      responses:
+        "200":
+          description: Information about the issue
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response.yml
+            application/xml:
+              schema:
+                $ref: ./schemas/response.yml
   # TODO
   #  /issues:
   # TODO
@@ -47,7 +63,23 @@ paths:
   # TODO
   #  /origins:
   # TODO
-  #  /person:
+  /person/{id}:
+    get:
+      summary: Get a particular person
+      operationId: get_person
+      parameters:
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
+      responses:
+        "200":
+          description: Information about the person
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response.yml
+            application/xml:
+              schema:
+                $ref: ./schemas/response.yml
   # TODO
   #  /people:
   # TODO
@@ -77,11 +109,10 @@ paths:
         - $ref: "#/components/parameters/field_list"
         - $ref: "#/components/parameters/limit"
         - $ref: "#/components/parameters/offset"
-        # TODO implement resources selector parameter
-        # - $ref: "#/components/parameters/resources"
+        - $ref: "#/components/parameters/resources"
       responses:
         "200":
-          description: Listing of all known document sets
+          description: Search Results
           content:
             application/json:
               schema:
@@ -112,23 +143,27 @@ paths:
   # TODO
   #  /video_categories:
   # TODO
-  # /volume:
+  /volume/{id}:
+    get:
+      summary: Get a particular volume
+      operationId: get_volume
+      parameters:
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
+      responses:
+        "200":
+          description: Information about the volume
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response.yml
+            application/xml:
+              schema:
+                $ref: ./schemas/response.yml
   # TODO
   #  /volumes
 components:
   parameters:
-    # api_key:
-    #   in: query
-    #   name: api_key
-    #   required: true
-    #   schema:
-    #     type: string
-    #     format: password
-    #     minLength: 40
-    #     maxLength: 40
-    #     pattern: "^[a-z0-9]*$"
-    #   example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
-    #   description: Your API Key
     format:
       in: query
       name: format
@@ -216,6 +251,14 @@ components:
           person
           team
           video
+    id:
+      in: path
+      name: id
+      required: true
+      description: Unique ID of the entity.
+      schema:
+        type: string
+      example: "4050-87668"
   schemas:
     response:
       $ref: ./schemas/response.yml
@@ -233,7 +276,17 @@ components:
       name: api_key
       type: apiKey
       in: query
-      description: ""
+      description: |
+        # API Key
+
+        Your ComicVine API key, required for access to any of the API's resources.
+        You can get your own API Key on the [ComicVine API info page](https://comicvine.gamespot.com/api/)
+
+        ## Format
+
+        It is 40 characters long with containing only lowercase characters along with numbers.
+          example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
+          regex pattern: `^[a-z0-9]*$`
 
 # Use API Key Authentication globally
 security:
