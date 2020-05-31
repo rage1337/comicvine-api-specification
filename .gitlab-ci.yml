@@ -1,0 +1,56 @@
+stages:
+  - test
+  # - build-documentation
+  - generate-clients
+  - deploy
+
+# specify the location of the Open API Specification files within your project
+# and the filename of the specification that you would like to display by default
+variables:
+  DOCS_FOLDER: "./"
+  SPEC_TO_DISPLAY: "comicvine-api.json"
+
+# These folders are cached between builds
+cache:
+  paths:
+    - ./node_modules
+
+validate-api-specification:
+  image:
+    name: openapitools/openapi-generator:cli-latest
+    entrypoint: [""]
+  stage: test
+  cache: {}
+  script:
+    - openapi-generator validate  -i ./openapi.yml
+
+python:
+  image:
+    name: openapitools/openapi-generator:cli-latest
+    entrypoint: [""]
+  stage: test
+  cache: {}
+  script:
+    - openapi-generator generate  -i ./openapi.yml -g ${CI_JOB_NAME} --git-user-id "${GIT_USER_ID}" --git-repo-id "comicvine-client-${CI_JOB_NAME}" --release-note "${CI_COMMIT_MESSAGE}" -o client
+    - cd client
+    - ./git_push.sh ${GIT_USER_ID} comicvine-client-${CI_JOB_NAME} "${CI_COMMIT_MESSAGE}"
+
+pages:
+  image: node:10-alpine
+  stage: deploy
+  before_script:
+    - npm install swagger-ui-dist@3.22.1
+    - npm install -g @apidevtools/swagger-cli
+  script:
+    # bundle spec into one file
+    - swagger-cli bundle -o ${SPEC_TO_DISPLAY}
+    # create static HTML
+    - mkdir public
+    - cp -rp node_modules/swagger-ui-dist/* public
+    - cp -rp $DOCS_FOLDER/* public
+    - sed -i "s#https://petstore\.swagger\.io/v2/swagger\.json#$SPEC_TO_DISPLAY#g" public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
