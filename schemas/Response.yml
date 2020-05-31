@@ -1,0 +1,56 @@
+type: object
+description: Object representing a response
+properties:
+  status_code:
+    description: |
+      An integer indicating the result of the request. Acceptable values are:
+        - 1:OK
+        - 100:Invalid API Key
+        - 101:Object Not Found
+        - 102:Error in URL Format
+        - 103:'jsonp' format requires a 'json_callback' argument
+        - 104:Filter Error
+        - 105:Subscriber only video is for subscribers only
+    type: integer
+    format: int32
+    enum:
+      - 1
+      - 100
+      - 101
+      - 102
+      - 103
+      - 104
+      - 105
+    example: 102
+  error:
+    description: A text string representing the status_code
+    type: string
+    example: Error in URL Format
+  number_of_total_results:
+    description: The number of total results matching the filter conditions specified
+    type: integer
+    format: int32
+    minimum: 0
+    example: 0
+  number_of_page_results:
+    description: The number of results on this page
+    type: integer
+    format: int32
+    minimum: 0
+    example: 0
+  # limit:
+  # $ref: "../openapi.yml#/components/parameters/limit"
+  # offset:
+  # $ref: "../openapi.yml#/components/parameters/limit"
+  results:
+    description: Zero or more items that match the filters specified
+    anyOf:
+      - $ref: ./Volume.yml
+      - $ref: ./Issue.yml
+      - $ref: ./Person.yml
+      - type: array
+        items:
+          oneOf:
+            - $ref: ./Volume.yml
+            - $ref: ./Issue.yml
+            - $ref: ./Person.yml

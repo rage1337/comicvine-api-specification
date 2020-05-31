@@ -53,10 +53,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
             application/xml:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
   # TODO
   #  /issues:
   # TODO
@@ -91,10 +91,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
             application/xml:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
   # TODO
   #  /people:
   # TODO
@@ -133,10 +133,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
             application/xml:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
   # TODO
   #  /story_arc:
   # TODO
@@ -175,10 +175,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
             application/xml:
               schema:
-                $ref: ./schemas/response.yml
+                $ref: "./schemas/Response.yml"
   # TODO
   #  /volumes
 components:
@@ -203,13 +203,13 @@ components:
       $ref: ./parameters/id.yml
   schemas:
     response:
-      $ref: ./schemas/response.yml
+      $ref: ./schemas/Response.yml
     volume:
-      $ref: ./schemas/volume.yml
+      $ref: ./schemas/Volume.yml
     issue:
-      $ref: ./schemas/issue.yml
+      $ref: ./schemas/Issue.yml
     person:
-      $ref: ./schemas/person.yml
+      $ref: ./schemas/Person.yml
 
   # Authentication Mechanisms
   securitySchemes:
@@ -222,13 +222,16 @@ components:
         # API Key
 
         Your ComicVine API key, required for access to any of the API's resources.
-        You can get your own API Key on the [ComicVine API info page](https://comicvine.gamespot.com/api/)
+
+        You can get your own API Key on the [ComicVine API info page](https://comicvine.gamespot.com/api/).
 
         ## Format
 
         It is 40 characters long with containing only lowercase characters along with numbers.
-          example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
-          regex pattern: `^[a-z0-9]*$`
+
+        __example:__ `4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx`
+
+        __regex pattern:__ `^[a-z0-9]*$`
 
 # Use API Key Authentication globally
 security:

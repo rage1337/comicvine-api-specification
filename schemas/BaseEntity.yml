@@ -1,5 +1,5 @@
 type: object
-description: Object with base properties for an entity
+# description: Object with base properties for an entity
 required:
   - id
 properties:
@@ -15,7 +15,7 @@ properties:
   aliases:
     description: List of aliases the entity is known by. A \n (newline) seperates each alias.
     type: string
-    examples: Joko Zuno
+    example: Joko Zuno
   api_detail_url:
     description: URL pointing to the entity detail resource.
     type: string

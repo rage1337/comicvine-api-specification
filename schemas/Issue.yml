@@ -1,9 +1,9 @@
 allOf:
-  - $ref: "./baseEntity.yml"
+  - $ref: ./BaseEntity.yml
   - type: object
     description: Object representing an issue
     properties:
-      # already defined in baseEntity
+      # already defined in BaseEntity
       # redfine them here to update their description
       date_added:
         description: Date the issue was added to Comic Vine.
@@ -46,7 +46,8 @@ allOf:
         description: A list of storyarcs in which this issue is the first appearance of the story arc.
       first_appearance_teams:
         description: A list of teams in which this issue is the first appearance of the team.
-      has_staff_review: null
+      # cannot be null
+      # has_staff_review:
       image:
         description: Main image of the issue.
       issue_number:
