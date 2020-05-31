@@ -50,7 +50,6 @@ properties:
       - $ref: ./volume.yml
       - $ref: ./issue.yml
       - $ref: ./person.yml
-      - $ref: ./multipleResults.yml
       - type: array
         items:
           oneOf:
