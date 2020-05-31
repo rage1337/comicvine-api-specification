@@ -1,0 +1,178 @@
+openapi: "3.0.3"
+info:
+  description: OpenAPI specification for the ComicVine API
+  version: "9.2.1"
+  title: ComicVine API
+externalDocs:
+  description: Official Documentation
+  url: "https://comicvine.gamespot.com/api/documentation"
+servers:
+  - url: "https://api.comicvine.com/"
+    description: Official Production server
+paths:
+# TODO
+  /character:
+    parameters:
+      - $ref: "#/components/parameters/api_key"
+      - $ref: "#/components/parameters/format"
+# TODO
+#  /characters:
+# TODO
+#  /chat:
+# TODO
+#  /chats:
+# TODO
+#  /concept:
+# TODO
+#  /concepts:
+# TODO
+#  /episode:
+# TODO
+#  /episodes:
+# TODO
+#  /issue:
+# TODO
+#  /issues:
+# TODO
+#  /location:
+# TODO
+#  /locations:
+# TODO
+#  /movie:
+# TODO
+#  /movies:
+# TODO
+#  /object:
+# TODO
+#  /objects:
+# TODO
+#  /origin:
+# TODO
+#  /origins:
+# TODO
+#  /person:
+# TODO
+#  /people:
+# TODO
+#  /power:
+# TODO
+#  /powers:
+# TODO
+#  /promo:
+# TODO
+#  /promos:
+# TODO
+#  /publisher:
+# TODO
+#  /publishers:
+# TODO
+#  /series:
+# TODO
+#  /series_list:
+# TODO
+#  /search:
+# TODO
+#  /story_arc:
+# TODO
+#  /story_arcs:
+# TODO
+#  /team:
+# TODO
+#  /teams:
+# TODO
+#  /types:
+# TODO
+#  /video:
+# TODO
+#  /videos:
+# TODO
+#  /video_type:
+# TODO
+#  /video_types:
+# TODO
+#  /video_category:
+# TODO
+#  /video_categories:
+# TODO
+#  /volume:
+# TODO
+#  /volumes
+
+components:
+  parameters:
+    api_key:
+      in: query
+      name: api_key
+      required: true
+      schema:
+        type: string
+        format: password
+        minLength: 40
+        maxLength: 40
+        pattern: '^[a-z0-9]*$'
+      example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
+      description: Your API Key
+    format:
+      in: query
+      name: format
+      schema:
+        type: string
+        enum:
+          - xml
+          - json
+          - jsonp
+      example: json
+      description: The data format of the response takes either xml, json, or jsonp.
+    query:
+      in: query
+      name: query
+      schema:
+        type: string
+      example: Yoko Tsuno
+      description: The search string.
+    field_list:
+      in: query
+      name: field_list
+      schema:
+        type: string
+      example: id,birth,description
+      description: List of field names to include in the response. Use this if you want to reduce the size of the response payload. This filter can accept multiple arguments, each delimited with a "," 
+    limit:
+      in: query
+      name: limit
+      schema:
+        type: integer
+        format: int32
+        minimum: 1
+        maximum: 100
+      example: 100
+      description: The number of results to display per page. This value defaults to 100 and can not exceed this number.
+    offset:
+      in: query
+      name: offset
+      schema:
+        type: integer
+        format: int32
+        minimum: 0
+      example: 200
+      description: Return results starting with the object at the offset specified.
+    sort:
+      in: query
+      name: sort
+      schema:
+        type: string
+        pattern: ^[a-z_]*:(asc|desc)$
+      example: birth:asc
+      description: "The result set can be sorted by the marked fields in the Fields section below. Format: &sort=field:direction where direction is either asc or desc."
+    filter:
+      in: query
+      name: filter
+      schema:
+        type: string
+        pattern: ^([a-z_]*:[^,]*(,|$))+
+      example: gender:Female,name:Yoko Tsuno
+      description: |
+        The result can be filtered by the marked fields in the Fields section below.
+          Single filter: &filter=field:value
+          Multiple filters: &filter=field:value,field:value
+          Date filters: &filter=field:start value|end value (using datetime format) 
