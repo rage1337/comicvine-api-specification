@@ -1,4 +1,4 @@
-openapi: "3.0.3"
+openapi: 3.0.3
 info:
   description: OpenAPI specification for the ComicVine API
   version: "1.0"
@@ -91,13 +91,9 @@ paths:
   # TODO
   #  /video_categories:
   # TODO
-  /volume:
-    parameters:
-      - $ref: "#/components/parameters/format"
-      - $ref: "#/components/parameters/field_list"
-# TODO
-#  /volumes
-
+  # /volume:
+  # TODO
+  #  /volumes
 components:
   parameters:
     api_key:
@@ -122,7 +118,7 @@ components:
           - json
           - jsonp
       example: json
-      description: The data format of the response takes either xml, json, or jsonp.
+      description: "The data format of the response takes either xml, json, or jsonp."
     query:
       in: query
       name: query
@@ -135,8 +131,8 @@ components:
       name: field_list
       schema:
         type: string
-      example: id,birth,description
-      description: List of field names to include in the response. Use this if you want to reduce the size of the response payload. This filter can accept multiple arguments, each delimited with a ","
+      example: "id,birth,description"
+      description: 'List of field names to include in the response. Use this if you want to reduce the size of the response payload. This filter can accept multiple arguments, each delimited with a ","'
     limit:
       in: query
       name: limit
@@ -161,44 +157,35 @@ components:
       name: sort
       schema:
         type: string
-        pattern: ^[a-z_]*:(asc|desc)$
-      example: birth:asc
+        pattern: "^[a-z_]*:(asc|desc)$"
+      example: "birth:asc"
       description: "The result set can be sorted by the marked fields in the Fields section below. Format: &sort=field:direction where direction is either asc or desc."
     filter:
       in: query
       name: filter
       schema:
         type: string
-        pattern: ^([a-z_]*:[^,]*(,|$))+
-      example: gender:Female,name:Yoko Tsuno
+        pattern: "^([a-z_]*:[^,]*(,|$))+"
+      example: "gender:Female,name:Yoko Tsuno"
       description: |
         The result can be filtered by the marked fields in the Fields section below.
           Single filter: &filter=field:value
           Multiple filters: &filter=field:value,field:value
           Date filters: &filter=field:start value|end value (using datetime format)
-    # ok:
-    #   description: API call completed successfully
-    #   content:
-    #     application/json:
-    #       schema:
-    #         $ref: '#/components/schemas/ArrayOfUsers'
-    #     application/xml:
-    #       schema:
-    #         $ref: '#/components/schemas/ArrayOfUsers'
-    #     application/json:
-    #       schema:
-    #         $ref: "#/components/schemas/httpStatus"
-    #         code:
-    #           value: 404
-    #         message:
-    #           value: The resource you requested does not exist
-  # responses:
   schemas:
     response:
-      $ref: "./schemas/response.yml"
+      $ref: ./schemas/response.yml
     volume:
-      $ref: "./schemas/volume.yml"
+      $ref: ./schemas/volume.yml
     issue:
-      $ref: "./schemas/issue.yml"
+      $ref: ./schemas/issue.yml
     person:
-      $ref: "./schemas/person.yml"
+      $ref: ./schemas/person.yml
+  securitySchemes:
+    api_key:
+      name: api_key
+      type: apiKey
+      in: query
+      description: ""
+security:
+  - api_key: []
