@@ -18,20 +18,19 @@ cache:
 validate-api-specification:
   image:
     name: openapitools/openapi-generator:cli-latest
-    entrypoint: [""]
   stage: test
   cache: {}
   script:
-    - openapi-generator validate  -i ./openapi.yml
+    - validate  -i ./openapi.yml
 
 python:
   image:
     name: openapitools/openapi-generator:cli-latest
     entrypoint: [""]
-  stage: test
+  stage: generate-clients
   cache: {}
   script:
-    - openapi-generator generate  -i ./openapi.yml -g ${CI_JOB_NAME} --git-user-id "${GIT_USER_ID}" --git-repo-id "comicvine-client-${CI_JOB_NAME}" --release-note "${CI_COMMIT_MESSAGE}" -o client
+    - docker-entrypoint.sh generate  -i ./openapi.yml -g ${CI_JOB_NAME} --git-user-id "${GIT_USER_ID}" --git-repo-id "comicvine-client-${CI_JOB_NAME}" --release-note "${CI_COMMIT_MESSAGE}" -o client
     - cd client
     - ./git_push.sh ${GIT_USER_ID} comicvine-client-${CI_JOB_NAME} "${CI_COMMIT_MESSAGE}"
 
