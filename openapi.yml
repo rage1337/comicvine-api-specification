@@ -7,7 +7,7 @@ externalDocs:
   description: Official Documentation
   url: "https://comicvine.gamespot.com/api/documentation"
 servers:
-  - url: "https://api.comicvine.com/"
+  - url: "https://comicvine.gamespot.com/api"
     description: Official Production server
 paths:
 # TODO
