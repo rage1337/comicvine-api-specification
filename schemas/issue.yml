@@ -2,7 +2,7 @@ type: object
 description: Object representing an issue
 properties:
   aliases:
-    description: List of aliases the issue is known by. A \n (newline) seperates each alias.
+    description: "List of aliases the issue is known by. A \\n (newline) seperates each alias."
   api_detail_url:
     description: URL pointing to the issue detail resource.
   character_credits:
@@ -35,7 +35,7 @@ properties:
     description: A list of storyarcs in which this issue is the first appearance of the story arc.
   first_appearance_teams:
     description: A list of teams in which this issue is the first appearance of the team.
-  has_staff_review:
+  has_staff_review: null
   id:
     description: Unique ID of the issue.
   image:
