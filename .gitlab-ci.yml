@@ -45,7 +45,7 @@ pages:
     - npm install -g @apidevtools/swagger-cli
   script:
     # bundle spec into one file
-    - swagger-cli bundle -o ${SPEC_TO_DISPLAY}
+    - swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml
     # create static HTML
     - mkdir public
     - cp -rp node_modules/swagger-ui-dist/* public
