@@ -18,10 +18,11 @@ cache:
 validate-api-specification:
   image:
     name: openapitools/openapi-generator:cli-latest
+    entrypoint: [""]
   stage: test
   cache: {}
   script:
-    - validate  -i ./openapi.yml
+    - docker-entrypoint.sh validate  -i ./openapi.yml
 
 python:
   image:
