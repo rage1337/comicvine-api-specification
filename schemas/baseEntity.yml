@@ -1,0 +1,36 @@
+type: object
+description: Object with base properties for an entity
+required:
+  - id
+properties:
+  id:
+    description: Unique ID for the entity.
+    type: integer
+    format: int32
+    example: 63316
+  name:
+    description: Name for the entity
+    type: string
+    example: Yoko Tsuno
+  aliases:
+    description: List of aliases the entity is known by. A \n (newline) seperates each alias.
+    type: string
+    examples: Joko Zuno
+  api_detail_url:
+    description: URL pointing to the entity detail resource.
+    type: string
+    format: uri
+    example: https://comicvine.gamespot.com/api/volume/4050-87668/
+  site_detail_url:
+    description: URL pointing to the concept on Giant Bomb.
+    type: string
+    format: uri
+    example: https://comicvine.gamespot.com/yoko-tsuno/4005-63316/
+  date_added:
+    description: Date the entity was added to Comic Vine.
+    type: string
+    example: "2016-01-26 17:52:32"
+  date_last_updated:
+    description: Date the entity was last updated on Comic Vine.
+    type: string
+    example: "2016-01-26 17:53:02"

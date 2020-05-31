@@ -1,64 +1,69 @@
-type: object
-description: Object representing an issue
-properties:
-  aliases:
-    description: "List of aliases the issue is known by. A \\n (newline) seperates each alias."
-  api_detail_url:
-    description: URL pointing to the issue detail resource.
-  character_credits:
-    description: A list of characters that appear in this issue.
-  characters_died_in:
-    description: A list of characters that died in this issue.
-  concept_credits:
-    description: A list of concepts that appear in this issue.
-  cover_date:
-    description: The publish date printed on the cover of an issue.
-  date_added:
-    description: Date the issue was added to Comic Vine.
-  date_last_updated:
-    description: Date the issue was last updated on Comic Vine.
-  deck:
-    description: Brief summary of the issue.
-  description:
-    description: Description of the issue.
-  disbanded_teams:
-    description: A list of teams that disbanded in this issue.
-  first_appearance_characters:
-    description: A list of characters in which this issue is the first appearance of the character.
-  first_appearance_concepts:
-    description: A list of concepts in which this issue is the first appearance of the concept.
-  first_appearance_locations:
-    description: A list of locations in which this issue is the first appearance of the location.
-  first_appearance_objects:
-    description: A list of objects in which this issue is the first appearance of the object.
-  first_appearance_storyarcs:
-    description: A list of storyarcs in which this issue is the first appearance of the story arc.
-  first_appearance_teams:
-    description: A list of teams in which this issue is the first appearance of the team.
-  has_staff_review: null
-  id:
-    description: Unique ID of the issue.
-  image:
-    description: Main image of the issue.
-  issue_number:
-    description: The number assigned to the issue within the volume set.
-  location_credits:
-    description: List of locations that appeared in this issue.
-  name:
-    description: Name of the issue.
-  object_credits:
-    description: List of objects that appeared in this issue.
-  person_credits:
-    description: List of people that worked on this issue.
-  site_detail_url:
-    description: URL pointing to the issue on Giant Bomb.
-  store_date:
-    description: The date the issue was first sold in stores.
-  story_arc_credits:
-    description: List of story arcs this issue appears in.
-  team_credits:
-    description: List of teams that appear in this issue.
-  teams_disbanded_in:
-    description: List of teams that disbanded in this issue.
-  volume:
-    description: The volume this issue is a part of.
+allOf:
+  - $ref: "./baseEntity.yml"
+  - type: object
+    description: Object representing an issue
+    properties:
+      # already defined in baseEntity
+      # redfine them here to update their description
+      date_added:
+        description: Date the issue was added to Comic Vine.
+      date_last_updated:
+        description: Date the issue was last updated on Comic Vine.
+      id:
+        description: Unique ID of the issue.
+      aliases:
+        description: List of aliases the issue is known by. A \n (newline) seperates each alias.
+      api_detail_url:
+        description: URL pointing to the issue detail resource.
+      site_detail_url:
+        description: URL pointing to the issue on Giant Bomb.
+      name:
+        description: Name of the issue.
+      # fields unique to this entity
+      character_credits:
+        description: A list of characters that appear in this issue.
+      characters_died_in:
+        description: A list of characters that died in this issue.
+      concept_credits:
+        description: A list of concepts that appear in this issue.
+      cover_date:
+        description: The publish date printed on the cover of an issue.
+      deck:
+        description: Brief summary of the issue.
+      description:
+        description: Description of the issue.
+      disbanded_teams:
+        description: A list of teams that disbanded in this issue.
+      first_appearance_characters:
+        description: A list of characters in which this issue is the first appearance of the character.
+      first_appearance_concepts:
+        description: A list of concepts in which this issue is the first appearance of the concept.
+      first_appearance_locations:
+        description: A list of locations in which this issue is the first appearance of the location.
+      first_appearance_objects:
+        description: A list of objects in which this issue is the first appearance of the object.
+      first_appearance_storyarcs:
+        description: A list of storyarcs in which this issue is the first appearance of the story arc.
+      first_appearance_teams:
+        description: A list of teams in which this issue is the first appearance of the team.
+      has_staff_review: null
+      image:
+        description: Main image of the issue.
+      issue_number:
+        description: The number assigned to the issue within the volume set.
+      location_credits:
+        description: List of locations that appeared in this issue.
+      object_credits:
+        description: List of objects that appeared in this issue.
+      person_credits:
+        description: List of people that worked on this issue.
+      store_date:
+        description: The date the issue was first sold in stores.
+      story_arc_credits:
+        description: List of story arcs this issue appears in.
+      team_credits:
+        description: List of teams that appear in this issue.
+      teams_disbanded_in:
+        description: List of teams that disbanded in this issue.
+      volume:
+        description: The volume this issue is a part of.
