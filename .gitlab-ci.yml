@@ -6,7 +6,7 @@ stages:
 # specify the location of the Open API Specification files within your project
 # and the filename of the specification that you would like to display by default
 variables:
-  DOCS_FOLDER: "."
+  # DOCS_FOLDER: "."
   SPEC_TO_DISPLAY: "comicvine-api.json"
 
 validate-api-specification:
@@ -49,7 +49,7 @@ pages:
     # create static HTML
     - mkdir public
     - cp -rp node_modules/swagger-ui-dist/* public
-    - cp -rp $DOCS_FOLDER/* public
+    # - cp -rp $DOCS_FOLDER/* public
     - sed -i "s#https://petstore\.swagger\.io/v2/swagger\.json#$SPEC_TO_DISPLAY#g" public/index.html
   artifacts:
     paths:
