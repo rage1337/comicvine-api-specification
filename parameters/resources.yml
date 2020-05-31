@@ -1,0 +1,20 @@
+in: query
+name: resources
+schema:
+  type: string
+  pattern: "^([a-z_]+(,|$))+$"
+example: character,volume
+description: |
+  List of resources to filter results. This filter can accept multiple arguments, each delimited with a ",". Available options are:
+    character
+    concept
+    origin
+    object
+    location
+    issue
+    story_arc
+    volume
+    publisher
+    person
+    team
+    video

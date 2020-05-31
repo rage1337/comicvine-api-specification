@@ -1,0 +1,7 @@
+in: path
+name: id
+required: true
+description: Unique ID of the entity.
+schema:
+  type: string
+example: "4050-87668"

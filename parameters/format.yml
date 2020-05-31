@@ -1,0 +1,11 @@
+in: query
+name: format
+schema:
+  type: string
+  default: xml
+  enum:
+    - xml
+    - json
+    - jsonp
+example: json
+description: "The data format of the response takes either xml, json, or jsonp."

@@ -1,0 +1,10 @@
+in: query
+name: limit
+schema:
+  type: integer
+  format: int32
+  default: 100
+  minimum: 0
+  maximum: 100
+example: 100
+description: The number of results to display per page. This value defaults to 100 and can not exceed this number.

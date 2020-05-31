@@ -9,6 +9,17 @@ externalDocs:
 servers:
   - url: "https://comicvine.gamespot.com/api"
     description: Official Production server
+
+tags:
+  - name: issue
+    description: Endpoints for a single comic issue
+  - name: person
+    description: Endpoints for a single person
+  - name: search
+    description: Endpoints for the API search
+  - name: volume
+    description: Endpoints for a single comic volume
+
 paths:
   # TODO
   #  /character:
@@ -31,6 +42,8 @@ paths:
     get:
       summary: Get a particular issue
       operationId: get_issue
+      tags:
+        - issue
       parameters:
         - $ref: "#/components/parameters/format"
         - $ref: "#/components/parameters/field_list"
@@ -67,6 +80,8 @@ paths:
     get:
       summary: Get a particular person
       operationId: get_person
+      tags:
+        - person
       parameters:
         - $ref: "#/components/parameters/format"
         - $ref: "#/components/parameters/field_list"
@@ -103,6 +118,8 @@ paths:
     get:
       summary: Search to ComicVine database
       operationId: search
+      tags:
+        - search
       parameters:
         - $ref: "#/components/parameters/format"
         - $ref: "#/components/parameters/query"
@@ -147,6 +164,8 @@ paths:
     get:
       summary: Get a particular volume
       operationId: get_volume
+      tags:
+        - volume
       parameters:
         - $ref: "#/components/parameters/format"
         - $ref: "#/components/parameters/field_list"
@@ -165,100 +184,23 @@ paths:
 components:
   parameters:
     format:
-      in: query
-      name: format
-      schema:
-        type: string
-        default: xml
-        enum:
-          - xml
-          - json
-          - jsonp
-      example: json
-      description: "The data format of the response takes either xml, json, or jsonp."
+      $ref: ./parameters/format.yml
     query:
-      in: query
-      name: query
-      schema:
-        type: string
-      example: Yoko Tsuno
-      description: The search string.
+      $ref: ./parameters/query.yml
     field_list:
-      in: query
-      name: field_list
-      schema:
-        type: string
-      example: "id,birth,description"
-      description: 'List of field names to include in the response. Use this if you want to reduce the size of the response payload. This filter can accept multiple arguments, each delimited with a ","'
+      $ref: ./parameters/field_list.yml
     limit:
-      in: query
-      name: limit
-      schema:
-        type: integer
-        format: int32
-        default: 100
-        minimum: 0
-        maximum: 100
-      example: 100
-      description: The number of results to display per page. This value defaults to 100 and can not exceed this number.
+      $ref: ./parameters/limit.yml
     offset:
-      in: query
-      name: offset
-      schema:
-        type: integer
-        format: int32
-        minimum: 0
-      example: 200
-      description: Return results starting with the object at the offset specified.
+      $ref: ./parameters/offset.yml
     sort:
-      in: query
-      name: sort
-      schema:
-        type: string
-        pattern: "^[a-z_]*:(asc|desc)$"
-      example: "birth:asc"
-      description: "The result set can be sorted by the marked fields in the Fields section below. Format: &sort=field:direction where direction is either asc or desc."
+      $ref: ./parameters/sort.yml
     filter:
-      in: query
-      name: filter
-      schema:
-        type: string
-        pattern: "^([a-z_]+:[^,]+(,|$))+$"
-      example: "gender:Female,name:Yoko Tsuno"
-      description: |
-        The result can be filtered by the marked fields in the Fields section below.
-          Single filter: &filter=field:value
-          Multiple filters: &filter=field:value,field:value
-          Date filters: &filter=field:start value|end value (using datetime format)
+      $ref: ./parameters/filter.yml
     resources:
-      in: query
-      name: resources
-      schema:
-        type: string
-        pattern: "^([a-z_]+(,|$))+$"
-      example: character,volume
-      description: |
-        List of resources to filter results. This filter can accept multiple arguments, each delimited with a ",". Available options are:
-          character
-          concept
-          origin
-          object
-          location
-          issue
-          story_arc
-          volume
-          publisher
-          person
-          team
-          video
+      $ref: ./parameters/resources.yml
     id:
-      in: path
-      name: id
-      required: true
-      description: Unique ID of the entity.
-      schema:
-        type: string
-      example: "4050-87668"
+      $ref: ./parameters/id.yml
   schemas:
     response:
       $ref: ./schemas/response.yml

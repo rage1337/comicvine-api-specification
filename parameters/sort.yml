@@ -1,0 +1,7 @@
+in: query
+name: sort
+schema:
+  type: string
+  pattern: "^[a-z_]*:(asc|desc)$"
+example: "birth:asc"
+description: "The result set can be sorted by the marked fields in the Fields section below. Format: &sort=field:direction where direction is either asc or desc."

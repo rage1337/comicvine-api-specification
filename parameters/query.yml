@@ -1,0 +1,6 @@
+in: query
+name: query
+schema:
+  type: string
+example: Yoko Tsuno
+description: The search string.

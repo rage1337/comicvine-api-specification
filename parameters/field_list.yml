@@ -1,0 +1,6 @@
+in: query
+name: field_list
+schema:
+  type: string
+example: "id,birth,description"
+description: 'List of field names to include in the response. Use this if you want to reduce the size of the response payload. This filter can accept multiple arguments, each delimited with a ","'
