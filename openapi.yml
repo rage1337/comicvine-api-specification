@@ -67,7 +67,28 @@ paths:
   # TODO
   #  /series_list:
   # TODO
-  #  /search:
+  /search:
+    get:
+      summary: Search to ComicVine database
+      operationId: search
+      parameters:
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/query"
+        - $ref: "#/components/parameters/field_list"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/offset"
+        # TODO implement resources selector parameter
+        # - $ref: "#/components/parameters/resources"
+      responses:
+        "200":
+          description: Listing of all known document sets
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/response.yml
+            application/xml:
+              schema:
+                $ref: ./schemas/response.yml
   # TODO
   #  /story_arc:
   # TODO
@@ -96,23 +117,24 @@ paths:
   #  /volumes
 components:
   parameters:
-    api_key:
-      in: query
-      name: api_key
-      required: true
-      schema:
-        type: string
-        format: password
-        minLength: 40
-        maxLength: 40
-        pattern: "^[a-z0-9]*$"
-      example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
-      description: Your API Key
+    # api_key:
+    #   in: query
+    #   name: api_key
+    #   required: true
+    #   schema:
+    #     type: string
+    #     format: password
+    #     minLength: 40
+    #     maxLength: 40
+    #     pattern: "^[a-z0-9]*$"
+    #   example: 4ddon0bxepyyb19iz6m54mtucqm83bsj6fn9othx
+    #   description: Your API Key
     format:
       in: query
       name: format
       schema:
         type: string
+        default: xml
         enum:
           - xml
           - json
@@ -139,6 +161,7 @@ components:
       schema:
         type: integer
         format: int32
+        default: 100
         minimum: 0
         maximum: 100
       example: 100
@@ -165,13 +188,34 @@ components:
       name: filter
       schema:
         type: string
-        pattern: "^([a-z_]*:[^,]*(,|$))+"
+        pattern: "^([a-z_]+:[^,]+(,|$))+$"
       example: "gender:Female,name:Yoko Tsuno"
       description: |
         The result can be filtered by the marked fields in the Fields section below.
           Single filter: &filter=field:value
           Multiple filters: &filter=field:value,field:value
           Date filters: &filter=field:start value|end value (using datetime format)
+    resources:
+      in: query
+      name: resources
+      schema:
+        type: string
+        pattern: "^([a-z_]+(,|$))+$"
+      example: character,volume
+      description: |
+        List of resources to filter results. This filter can accept multiple arguments, each delimited with a ",". Available options are:
+          character
+          concept
+          origin
+          object
+          location
+          issue
+          story_arc
+          volume
+          publisher
+          person
+          team
+          video
   schemas:
     response:
       $ref: ./schemas/response.yml
@@ -181,11 +225,16 @@ components:
       $ref: ./schemas/issue.yml
     person:
       $ref: ./schemas/person.yml
+
+  # Authentication Mechanisms
   securitySchemes:
+    # Define API Key Authentication
     api_key:
       name: api_key
       type: apiKey
       in: query
       description: ""
+
+# Use API Key Authentication globally
 security:
   - api_key: []
