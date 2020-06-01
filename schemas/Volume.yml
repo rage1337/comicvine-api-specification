@@ -5,42 +5,30 @@ allOf:
     properties:
       aliases:
         description: List of aliases the volume is known by. A \n (newline) seperates each alias.
-      api_detail_url:
-        description: URL pointing to the volume detail resource.
       character_credits:
         description: A list of characters that appear in this volume.
       concept_credits:
         description: A list of concepts that appear in this volume.
       count_of_issues:
         description: Number of issues included in this volume.
-      date_added:
-        description: Date the volume was added to Comic Vine.
-      date_last_updated:
-        description: Date the volume was last updated on Comic Vine.
       deck:
         description: Brief summary of the volume.
       description:
         description: Description of the volume.
       first_issue:
         description: The first issue in this volume.
-      id:
-        description: Unique ID of the volume.
       image:
         description: Main image of the volume.
       last_issue:
         description: The last issue in this volume.
       location_credits:
         description: List of locations that appeared in this volume.
-      name:
-        description: Name of the volume.
       object_credits:
         description: List of objects that appeared in this volume.
       person_credits:
         description: List of people that worked on this volume.
       publisher:
         description: The primary publisher a volume is attached to.
-      site_detail_url:
-        description: URL pointing to the volume on Giant Bomb.
       start_year:
         description: The first year this volume appeared in comics.
       team_credits:

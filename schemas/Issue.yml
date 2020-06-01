@@ -3,23 +3,6 @@ allOf:
   - type: object
     description: Object representing an issue
     properties:
-      # already defined in BaseEntity
-      # redfine them here to update their description
-      date_added:
-        description: Date the issue was added to Comic Vine.
-      date_last_updated:
-        description: Date the issue was last updated on Comic Vine.
-      id:
-        description: Unique ID of the issue.
-      aliases:
-        description: List of aliases the issue is known by. A \n (newline) seperates each alias.
-      api_detail_url:
-        description: URL pointing to the issue detail resource.
-      site_detail_url:
-        description: URL pointing to the issue on Giant Bomb.
-      name:
-        description: Name of the issue.
-      # fields unique to this entity
       character_credits:
         description: A list of characters that appear in this issue.
       characters_died_in:

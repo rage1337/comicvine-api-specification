@@ -3,10 +3,6 @@ allOf:
   - type: object
     description: Object representing a Person
     properties:
-      aliases:
-        description: List of aliases the person is known by. A \n (newline) seperates each alias.
-      api_detail_url:
-        description: URL pointing to the person detail resource.
       birth:
         description: A date, if one exists, that the person was born on. Not an origin date.
       count_of_issue_appearances:
@@ -15,10 +11,6 @@ allOf:
         description: Country the person resides in.
       created_characters:
         description: Comic characters this person created.
-      date_added:
-        description: Date the person was added to Comic Vine.
-      date_last_updated:
-        description: Date the person was last updated on Comic Vine.
       death:
         description: Date this person died on.
       deck:
@@ -31,16 +23,10 @@ allOf:
         description: "Gender of the person. Available options are: Male, Female, Other"
       hometown:
         description: City or town the person resides in.
-      id:
-        description: Unique ID of the person.
       image:
         description: Main image of the person.
       issue_credits:
         description: List of issues this person appears in.
-      name:
-        description: Name of the person.
-      site_detail_url:
-        description: URL pointing to the person on Giant Bomb.
       story_arc_credits:
         description: List of story arcs this person appears in.
       volume_credits:
