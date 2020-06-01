@@ -7,14 +7,13 @@ stages:
 # and the filename of the specification that you would like to display by default
 variables:
   # DOCS_FOLDER: "."
-  SPEC_TO_DISPLAY: "comicvine-api.json"
+  SPEC_TO_DISPLAY: "comicvine-api.yml"
 
 validate-api-specification:
   image:
     name: openapitools/openapi-generator:cli-latest
     entrypoint: [""]
   stage: test
-  cache: {}
   script:
     - docker-entrypoint.sh validate  -i ./openapi.yml
 
@@ -23,9 +22,6 @@ python:
     name: openapitools/openapi-generator:cli-latest
     entrypoint: [""]
   stage: generate-clients
-  cache:
-    paths:
-      - /var/cache/apk/
   before_script:
     - apk add git
   script:
@@ -33,6 +29,7 @@ python:
     - cd client
     - chmod +x ./git_push.sh
     - ./git_push.sh ${GIT_USER_ID} comicvine-client-${CI_JOB_NAME} "${CI_COMMIT_MESSAGE}"
+    - git push origin master 2>&1 | grep -v 'To https'
 
 pages:
   image: node:10-alpine
@@ -42,10 +39,11 @@ pages:
       - ./node_modules
   before_script:
     - npm install swagger-ui-dist@3.22.1
-    - npm install -g @apidevtools/swagger-cli
+    - npm install @apidevtools/swagger-cli
   script:
     # bundle spec into one file
-    - swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml
+    - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
+    - cp ${SPEC_TO_DISPLAY} public/
     # create static HTML
     - mkdir public
     - cp -rp node_modules/swagger-ui-dist/* public
