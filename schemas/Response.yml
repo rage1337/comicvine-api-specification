@@ -56,5 +56,5 @@ properties:
             - $ref: ./Issue.yml
             - $ref: ./Person.yml
             - $ref: ./Character.yml
-    example:
-      $ref: ../examples/response.yml
+    # example:
+    #   $ref: ../examples/response.yml
