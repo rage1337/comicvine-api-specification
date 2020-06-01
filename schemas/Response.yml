@@ -48,11 +48,13 @@ properties:
       - $ref: ./Volume.yml
       - $ref: ./Issue.yml
       - $ref: ./Person.yml
+      - $ref: ./Character.yml
       - type: array
         items:
           oneOf:
             - $ref: ./Volume.yml
             - $ref: ./Issue.yml
             - $ref: ./Person.yml
+            - $ref: ./Character.yml
     example:
       $ref: ../examples/response.yml

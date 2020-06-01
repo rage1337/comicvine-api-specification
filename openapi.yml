@@ -11,18 +11,43 @@ servers:
     description: Official Production server
 
 tags:
+  - name: character
+    description: Endpoints for a character
   - name: issue
-    description: Endpoints for a single comic issue
+    description: Endpoints for a comic issue
   - name: person
-    description: Endpoints for a single person
+    description: Endpoints for a person
   - name: search
     description: Endpoints for the API search
   - name: volume
-    description: Endpoints for a single comic volume
+    description: Endpoints for a comic volume
 
 paths:
-  # TODO
-  #  /character:
+  /character:
+    get:
+      summary: Get a particular character
+      operationId: get_character
+      tags:
+        - character
+      parameters:
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
+      responses:
+        "200":
+          description: Information about the character
+          content:
+            application/json:
+              schema:
+                $ref: "./schemas/Response.yml"
+              # TODO example
+              # example:
+              #   $ref: "./examples/issue.yml"
+            application/xml:
+              schema:
+                $ref: "./schemas/Response.yml"
+              # TODO example
+              # example:
+              #   $ref: "./examples/character.yml"
   # TODO
   #  /characters:
   # TODO
@@ -37,7 +62,6 @@ paths:
   #  /episode:
   # TODO
   #  /episodes:
-  # TODO
   /issue/{id}:
     get:
       summary: Get a particular issue

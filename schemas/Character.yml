@@ -1,0 +1,51 @@
+allOf:
+  - $ref: ./BaseEntity.yml
+  - type: object
+    description: Object representing a Character
+    properties:
+      birth:
+        description: A date, if one exists, that the character was born on. Not an origin date.
+      character_enemies:
+        description: List of characters that are enemies with this character.
+      character_friends:
+        description: List of characters that are friends with this character.
+      count_of_issue_appearances:
+        description: Number of issues this character appears in.
+      creators:
+        description: List of the real life people who created this character.
+      deck:
+        description: Brief summary of the character.
+      description:
+        description: Description of the character.
+      first_appeared_in_issue:
+        description: Issue where the character made its first appearance.
+      gender:
+        description: "Gender of the character. Available options are: Male, Female, Other"
+      image:
+        description: Main image of the character.
+      issue_credits:
+        description: List of issues this character appears in.
+      issues_died_in:
+        description: List of issues this character died in.
+      movies:
+        description: Movies the character was in.
+      origin:
+        description: The origin of the character. Human, Alien, Robot ...etc
+      powers:
+        description: List of super powers a character has.
+      publisher:
+        description: The primary publisher a character is attached to.
+      real_name:
+        description: Real name of the character.
+      site_detail_url:
+        description: URL pointing to the character on Giant Bomb.
+      story_arc_credits:
+        description: List of story arcs this character appears in.
+      team_enemies:
+        description: List of teams that are enemies of this character.
+      team_friends:
+        description: List of teams that are friends with this character.
+      teams:
+        description: List of teams this character is a member of.
+      volume_credits:
+        description: List of comic volumes this character appears in.
