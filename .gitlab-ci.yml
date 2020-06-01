@@ -20,7 +20,7 @@ api-specification:
   script:
     - npx swagger-cli validate ./openapi.yml -d
     # bundle spec into one file
-    - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
+    - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml
     - mkdir -p public
     - cp ${SPEC_TO_DISPLAY} public/
   artifacts:
