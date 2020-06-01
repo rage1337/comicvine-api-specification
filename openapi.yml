@@ -54,9 +54,13 @@ paths:
             application/json:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/issue.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/issue.yml"
   # TODO
   #  /issues:
   # TODO
@@ -92,9 +96,13 @@ paths:
             application/json:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/person.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/person.yml"
   # TODO
   #  /people:
   # TODO
@@ -134,9 +142,14 @@ paths:
             application/json:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/response.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/response.yml"
+
   # TODO
   #  /story_arc:
   # TODO
@@ -176,9 +189,13 @@ paths:
             application/json:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/volume.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response.yml"
+              example:
+                $ref: "./examples/volume.yml"
   # TODO
   #  /volumes
 components:

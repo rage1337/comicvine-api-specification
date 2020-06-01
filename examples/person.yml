@@ -1,0 +1,312 @@
+---
+error: OK
+limit: 1
+offset: 0
+number_of_page_results: 1
+number_of_total_results: 1
+status_code: 1
+results:
+  aliases:
+  api_detail_url: https://comicvine.gamespot.com/api/person/4040-66060/
+  birth: "1933-11-17 00:00:00"
+  count_of_isssue_appearances:
+  country: Belgium
+  created_characters:
+    - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102443/
+      id: 102443
+      name: Aoki
+      site_detail_url: https://comicvine.gamespot.com/aoki/4005-102443/
+    - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102442/
+      id: 102442
+      name: Cecilia
+      site_detail_url: https://comicvine.gamespot.com/cecilia/4005-102442/
+    - api_detail_url: https://comicvine.gamespot.com/api/character/4005-130071/
+      id: 130071
+      name: Khany
+      site_detail_url: https://comicvine.gamespot.com/khany/4005-130071/
+    - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102444/
+      id: 102444
+      name: Monya
+      site_detail_url: https://comicvine.gamespot.com/monya/4005-102444/
+  date_added: "2012-10-09 11:47:23"
+  date_last_updated: "2012-11-30 11:55:09"
+  death:
+  deck:
+    Roger Leloup (born 17 November 1933) is a Belgian comic strip artist, novelist,
+    and a former collaborator of Hergé. He is most famous for the Yoko Tsuno comic
+    series
+  description:
+  email:
+  gender: 1
+  hometown: Verviers
+  id: 66060
+  image:
+    icon_url: https://comicvine1.cbsistatic.com/uploads/square_avatar/5/53387/2638281-2638280-1_nl_v02.jpg
+    medium_url: https://comicvine1.cbsistatic.com/uploads/scale_medium/5/53387/2638281-2638280-1_nl_v02.jpg
+    screen_url: https://comicvine1.cbsistatic.com/uploads/screen_medium/5/53387/2638281-2638280-1_nl_v02.jpg
+    screen_large_url: https://comicvine1.cbsistatic.com/uploads/screen_kubrick/5/53387/2638281-2638280-1_nl_v02.jpg
+    small_url: https://comicvine1.cbsistatic.com/uploads/scale_small/5/53387/2638281-2638280-1_nl_v02.jpg
+    super_url: https://comicvine1.cbsistatic.com/uploads/scale_large/5/53387/2638281-2638280-1_nl_v02.jpg
+    thumb_url: https://comicvine1.cbsistatic.com/uploads/scale_avatar/5/53387/2638281-2638280-1_nl_v02.jpg
+    tiny_url: https://comicvine1.cbsistatic.com/uploads/square_mini/5/53387/2638281-2638280-1_nl_v02.jpg
+    original_url: https://comicvine1.cbsistatic.com/uploads/original/5/53387/2638281-2638280-1_nl_v02.jpg
+    image_tags: All Images
+  issues:
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-760197/
+      id: 760197
+      name: Engel und Falken
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-29-engel-und-falken/4000-760197/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-668393/
+      id: 668393
+      name: The Light of Ixo
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-13-the-light-of-ixo/4000-668393/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-702596/
+      id: 702596
+      name: Der Tempel der Unsterblichen
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-28-der-tempel-der-unsterblichen/4000-702596/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-754166/
+      id: 754166
+      name: Geheimnisse und böser Zauber
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-9-geheimnisse-und-boser-z/4000-754166/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-603715/
+      id: 603715
+      name: Le temple des immortels
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-28-le-temple-des-immortels/4000-603715/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-595648/
+      id: 595648
+      name: The Titans
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-12-the-titans/4000-595648/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-532665/
+      id: 532665
+      name: The Three Suns of Vinea
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-11-the-three-suns-of-vinea/4000-532665/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-490586/
+      id: 490586
+      name: Le Secret de Khāny
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-27-le-secret-de-khany/4000-490586/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-488157/
+      id: 488157
+      name: Message For Eternity
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-10-message-for-eternity/4000-488157/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-453592/
+      id: 453592
+      name: The Forge of Vulcan
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-9-the-forge-of-vulcan/4000-453592/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-431692/
+      id: 431692
+      name: The Devil's Organ
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-8-the-devil-s-organ/4000-431692/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-370168/
+      id: 370168
+      name: ""
+      site_detail_url: https://comicvine.gamespot.com/spirou-3890/4000-370168/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-364257/
+      id: 364257
+      name: ""
+      site_detail_url: https://comicvine.gamespot.com/spirou-3889/4000-364257/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-364256/
+      id: 364256
+      name: ""
+      site_detail_url: https://comicvine.gamespot.com/spirou-3888/4000-364256/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-349579/
+      id: 349579
+      name: The Curious Trio
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-7-the-curious-trio/4000-349579/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-466241/
+      id: 466241
+      name: De Vloek Van De Amethist
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-26-de-vloek-van-de-amethist/4000-466241/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-334647/
+      id: 334647
+      name: The Morning of the World
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-6-the-morning-of-the-world/4000-334647/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-520598/
+      id: 520598
+      name: Die Erde am Abgrund
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-8-die-erde-am-abgrund/4000-520598/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-520451/
+      id: 520451
+      name: Dunkle Verschwörungen
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-7-dunkle-verschworungen/4000-520451/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-334646/
+      id: 334646
+      name: The Dragon of Hong Kong
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-5-the-dragon-of-hong-kong/4000-334646/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-520326/
+      id: 520326
+      name: Maschinenwesen
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-6-maschinenwesen/4000-520326/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-520080/
+      id: 520080
+      name: Unter der Sonne Chinas
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-5-unter-der-sonne-chinas/4000-520080/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162971/
+      id: 162971
+      name: Daughter of the Wind
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-4-daughter-of-the-wind/4000-162971/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-519709/
+      id: 519709
+      name: Vinea in Gefahr
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-4-vinea-in-gefahr/4000-519709/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-519432/
+      id: 519432
+      name: Jagd durch die Zeit
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-3-jagd-durch-die-zeit/4000-519432/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162969/
+      id: 162969
+      name: The Prey and the Ghost
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-3-the-prey-and-the-ghost/4000-162969/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-519375/
+      id: 519375
+      name: Von der Erde nach Vinea
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-2-von-der-erde-nach-vinea/4000-519375/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162968/
+      id: 162968
+      name: The Time Spiral
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-2-the-time-spiral/4000-162968/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-519238/
+      id: 519238
+      name: Die deutschen Abenteuer
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe-1-die-deutschen-abenteuer/4000-519238/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162967/
+      id: 162967
+      name: On the Edge of Life
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-1-on-the-edge-of-life/4000-162967/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688756/
+      id: 688756
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3512/4000-688756/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688755/
+      id: 688755
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3511/4000-688755/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688582/
+      id: 688582
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3510/4000-688582/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688581/
+      id: 688581
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3509/4000-688581/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688580/
+      id: 688580
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3508/4000-688580/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688579/
+      id: 688579
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3507/4000-688579/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688578/
+      id: 688578
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3506/4000-688578/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688522/
+      id: 688522
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3505/4000-688522/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688521/
+      id: 688521
+      name: Cosey
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3504-cosey/4000-688521/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688520/
+      id: 688520
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3503/4000-688520/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688519/
+      id: 688519
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3502/4000-688519/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-688518/
+      id: 688518
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-3501/4000-688518/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-170095/
+      id: 170095
+      name: "Yoko Tsuno : l'amitié au coeur de l'étrange !"
+      site_detail_url: https://comicvine.gamespot.com/spirou-3501-yoko-tsuno-lamitie-au-coeur-de-letrang/4000-170095/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-743419/
+      id: 743419
+      name: "Yoko Tsuno: De hemelse jonk"
+      site_detail_url: https://comicvine.gamespot.com/gazet-van-antwerpen-22-yoko-tsuno-de-hemelse-jonk/4000-743419/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-363645/
+      id: 363645
+      name: "Evènement : le retour de Yoko Tsuno"
+      site_detail_url: https://comicvine.gamespot.com/spirou-3277-evenement-le-retour-de-yoko-tsuno/4000-363645/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-511253/
+      id: 511253
+      name: Djävulens orgel
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-1-djavulens-orgel/4000-511253/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-360971/
+      id: 360971
+      name: Het Helse Orgel
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-2-het-helse-orgel/4000-360971/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-360919/
+      id: 360919
+      name: Trio in het onbekende
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-1-trio-in-het-onbekende/4000-360919/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-726483/
+      id: 726483
+      name: Le trio de l'étrange
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-1-le-trio-de-letrange/4000-726483/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-325045/
+      id: 325045
+      name: ""
+      site_detail_url: https://comicvine.gamespot.com/spirou-1737/4000-325045/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-673599/
+      id: 673599
+      name:
+      site_detail_url: https://comicvine.gamespot.com/robbedoes-1726/4000-673599/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-361273/
+      id: 361273
+      name: Seinen voor de eeuwigheid
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-5-seinen-voor-de-eeuwigheid/4000-361273/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-361152/
+      id: 361152
+      name: Avonturen met elektronika
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-4-avonturen-met-elektronika/4000-361152/
+    - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-360972/
+      id: 360972
+      name: Vulcanus' Smidse
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-3-vulcanus-smidse/4000-360972/
+  name: Roger Leloup
+  site_detail_url: https://comicvine.gamespot.com/roger-leloup/4040-66060/
+  story_arc_credits: []
+  volume_credits:
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-26984/
+      id: 26984
+      name: Yoko Tsuno
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-26984/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-27781/
+      id: 27781
+      name: Spirou
+      site_detail_url: https://comicvine.gamespot.com/spirou/4050-27781/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-52890/
+      id: 52890
+      name: Yoko Tsuno
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-52890/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-122646/
+      id: 122646
+      name: Yoko Tsuno
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-122646/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-87389/
+      id: 87389
+      name: Yoko Tsuno
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-87389/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-88827/
+      id: 88827
+      name: Yoko Tsuno Gesamtausgabe
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-gesamtausgabe/4050-88827/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-92284/
+      id: 92284
+      name: Robbedoes
+      site_detail_url: https://comicvine.gamespot.com/robbedoes/4050-92284/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-87872/
+      id: 87872
+      name: Yoko Tsuno
+      site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-87872/
+    - api_detail_url: https://comicvine.gamespot.com/api/volume/4050-125987/
+      id: 125987
+      name: Gazet van Antwerpen
+      site_detail_url: https://comicvine.gamespot.com/gazet-van-antwerpen/4050-125987/
+  website:
+version: "1.0"
