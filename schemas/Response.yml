@@ -54,3 +54,5 @@ properties:
             - $ref: ./Volume.yml
             - $ref: ./Issue.yml
             - $ref: ./Person.yml
+    example:
+      $ref: ../examples/response.yml
