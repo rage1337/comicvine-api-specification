@@ -45,9 +45,9 @@ pages:
   script:
     # bundle spec into one file
     - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
-    - cp ${SPEC_TO_DISPLAY} public/
     # create static HTML
     - mkdir public
+    - cp ${SPEC_TO_DISPLAY} public/
     - cp -rp node_modules/swagger-ui-dist/* public
     # - cp -rp $DOCS_FOLDER/* public
     - sed -i "s#https://petstore\.swagger\.io/v2/swagger\.json#$SPEC_TO_DISPLAY#g" public/index.html
