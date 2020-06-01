@@ -1,5 +1,5 @@
 stages:
-  - test
+  - validate
   - generate-clients
   - deploy
 
@@ -9,17 +9,23 @@ variables:
   # DOCS_FOLDER: "."
   SPEC_TO_DISPLAY: "comicvine-api.yml"
 
-cache:
-  paths:
-    - ./node_modules
-
-validate-api-specification:
+api-specification:
   image: node:10-alpine
-  stage: test
+  stage: validate
+  cache:
+    paths:
+      - ./node_modules
   before_script:
     - npm install @apidevtools/swagger-cli
   script:
     - npx swagger-cli validate ./openapi.yml -d
+    # bundle spec into one file
+    - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
+    - mkdir -p public
+    - cp ${SPEC_TO_DISPLAY} public/
+  artifacts:
+    paths:
+      - public/
 
 python:
   image:
@@ -42,14 +48,14 @@ python:
 pages:
   image: node:10-alpine
   stage: deploy
+  cache:
+    paths:
+      - ./node_modules
   before_script:
-    - npm install swagger-ui-dist@3.22.1 @apidevtools/swagger-cli
+    - npm install swagger-ui-dist@3.22.1
   script:
-    # bundle spec into one file
-    - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
     # create static HTML
-    - mkdir public
-    - cp ${SPEC_TO_DISPLAY} public/
+    - mkdir -p public
     - cp -rp node_modules/swagger-ui-dist/* public
     # - cp -rp $DOCS_FOLDER/* public
     - sed -i "s#https://petstore\.swagger\.io/v2/swagger\.json#$SPEC_TO_DISPLAY#g" public/index.html
