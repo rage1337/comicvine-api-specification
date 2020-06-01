@@ -30,6 +30,7 @@ paths:
       tags:
         - character
       parameters:
+        - $ref: ./parameters/id.yml
         - $ref: ./parameters/format.yml
         - $ref: ./parameters/field_list.yml
       responses:
@@ -69,6 +70,7 @@ paths:
       tags:
         - issue
       parameters:
+        - $ref: ./parameters/id.yml
         - $ref: ./parameters/format.yml
         - $ref: ./parameters/field_list.yml
       responses:
@@ -111,6 +113,7 @@ paths:
       tags:
         - person
       parameters:
+        - $ref: ./parameters/id.yml
         - $ref: ./parameters/format.yml
         - $ref: ./parameters/field_list.yml
       responses:
@@ -204,6 +207,7 @@ paths:
       tags:
         - volume
       parameters:
+        - $ref: ./parameters/id.yml
         - $ref: ./parameters/format.yml
         - $ref: ./parameters/field_list.yml
       responses:
