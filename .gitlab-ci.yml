@@ -28,8 +28,9 @@ python:
     - git config --global user.email "<>"
   script:
     - docker-entrypoint.sh generate  -i ./openapi.yml -o client -g ${CI_JOB_NAME} --git-user-id "${GIT_USER_ID}" --git-repo-id "comicvine-client-${CI_JOB_NAME}" --release-note "${CI_COMMIT_MESSAGE}" --additional-properties=packageName=comicvine_client --http-user-agent "client"
+    - cp build/git_push_force.sh client/
     - cd client
-    - chmod +x ./git_push.sh
+    - chmod +x ./git_push_force.sh
     - ./git_push_force.sh ${GIT_USER_ID} comicvine-client-${CI_JOB_NAME} "${CI_COMMIT_MESSAGE}"
 
 pages:
