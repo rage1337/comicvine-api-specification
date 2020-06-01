@@ -39,8 +39,7 @@ pages:
     paths:
       - ./node_modules
   before_script:
-    - npm install swagger-ui-dist@3.22.1
-    - npm install @apidevtools/swagger-cli
+    - npm install swagger-ui-dist@3.22.1 @apidevtools/swagger-cli
   script:
     # bundle spec into one file
     - npx swagger-cli bundle -o ${SPEC_TO_DISPLAY} ./openapi.yml --type yaml --dereference
