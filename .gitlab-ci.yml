@@ -31,7 +31,6 @@ python:
     - cd client
     - chmod +x ./git_push.sh
     - ./git_push.sh ${GIT_USER_ID} comicvine-client-${CI_JOB_NAME} "${CI_COMMIT_MESSAGE}"
-    - git push origin master 2>&1 | grep -v 'To https'
 
 pages:
   image: node:10-alpine
