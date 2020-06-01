@@ -44,14 +44,14 @@ properties:
   # $ref: "../openapi.yml#/components/parameters/limit"
   results:
     description: Zero or more items that match the filters specified
-    anyOf:
+    oneOf:
       - $ref: ./Volume.yml
       - $ref: ./Issue.yml
       - $ref: ./Person.yml
       - $ref: ./Character.yml
       - type: array
         items:
-          oneOf:
+          anyOf:
             - $ref: ./Volume.yml
             - $ref: ./Issue.yml
             - $ref: ./Person.yml
