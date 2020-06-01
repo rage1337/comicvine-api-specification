@@ -54,3 +54,96 @@ properties:
             - $ref: ./Volume.yml
             - $ref: ./Issue.yml
             - $ref: ./Person.yml
+        example:
+          - aliases: Joko Zuno
+            api_detail_url: https://comicvine.gamespot.com/api/character/4005-63316/
+            birth:
+            count_of_issue_appearances: 213
+            date_added: "2009-07-05 17:41:37"
+            date_last_updated: "2015-11-01 12:26:23"
+            deck: With knowledge and honor you can challenge anything.
+            description:
+              "<p>Yoko Tsuno is an electrical engineer, who was raised in Japan but
+              now lives in Belgium. She is quite compassionate and has a knack for making friends.
+              Yoko is also a skilled scuba diver, holds a black belt in aikido, and can pilot
+              both gliders and helicopters. This wide range of competences, together with her
+              near-flawless behaviour, makes Yoko fall into the classic category of a competent
+              woman. The flaw she does admit to having is the typically Japanese trait of valuing
+              personal honour above monetary wealth, which leads her at times to be trusting
+              to the point of blindness.<br /><br /></p><h3>About Time!<br /></h3><br />Yoko
+              first appeared in Belgium in 1970 in a number of different comics, so that her
+              adventures are now collected into 25 volumes, 4 of which have been translated
+              into English so far."
+            first_appeared_in_issue:
+              api_detail_url: https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-324438/
+              id: 324438
+              name:
+              issue_number: "1693"
+            gender: 2
+            id: 63316
+            image:
+              icon_url: https://comicvine1.cbsistatic.com/uploads/square_avatar/2/27783/864978-yoko_tsuno_0.jpg
+              medium_url: https://comicvine1.cbsistatic.com/uploads/scale_medium/2/27783/864978-yoko_tsuno_0.jpg
+              screen_url: https://comicvine1.cbsistatic.com/uploads/screen_medium/2/27783/864978-yoko_tsuno_0.jpg
+              screen_large_url: https://comicvine1.cbsistatic.com/uploads/screen_kubrick/2/27783/864978-yoko_tsuno_0.jpg
+              small_url: https://comicvine1.cbsistatic.com/uploads/scale_small/2/27783/864978-yoko_tsuno_0.jpg
+              super_url: https://comicvine1.cbsistatic.com/uploads/scale_large/2/27783/864978-yoko_tsuno_0.jpg
+              thumb_url: https://comicvine1.cbsistatic.com/uploads/scale_avatar/2/27783/864978-yoko_tsuno_0.jpg
+              tiny_url: https://comicvine1.cbsistatic.com/uploads/square_mini/2/27783/864978-yoko_tsuno_0.jpg
+              original_url: https://comicvine1.cbsistatic.com/uploads/original/2/27783/864978-yoko_tsuno_0.jpg
+              image_tags: All Images
+            name: Yoko Tsuno
+            origin:
+              api_detail_url: https://comicvine.gamespot.com/api/origin/4030-4/
+              id: 4
+              name: Human
+            publisher:
+              api_detail_url: https://comicvine.gamespot.com/api/publisher/4010-2368/
+              id: 2368
+              name: Dupuis
+            real_name: Yoko Tsuno
+            site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4005-63316/
+            resource_type: character
+          - aliases:
+            api_detail_url: https://comicvine.gamespot.com/api/volume/4050-87872/
+            count_of_issues: 29
+            date_added: "2016-02-04 17:42:41"
+            date_last_updated: "2019-03-08 13:33:05"
+            deck: " "
+            description:
+              "<p>German translation of the French series.</p><p><em>Seit die hübsche
+              und energische Elektronikspezialistin Yoko Tsuno bei einer Expedition ins Erdinnere
+              das außerirdische Volk der Vineaner kennengelernt hat, werden sie und ihre Freunde
+              Vic und Knut immer wieder in aufregende Weltraumabenteuer verwickelt...</em></p><p><em>Mit
+              dieser detailgetreu inszenierten Science-Fiction-Serie wurde Roger Leloup zu einem
+              der bekanntesten Zeichner der belgischen Ligne claire.</em></p>"
+            first_issue:
+              api_detail_url: https://comicvine.gamespot.com/api/issue/4000-513995/
+              id: 513995
+              name: Die Orgel des Teufels
+              issue_number: "2"
+            id: 87872
+            image:
+              icon_url: https://comicvine1.cbsistatic.com/uploads/square_avatar/0/3125/5035618-yok1.jpg
+              medium_url: https://comicvine1.cbsistatic.com/uploads/scale_medium/0/3125/5035618-yok1.jpg
+              screen_url: https://comicvine1.cbsistatic.com/uploads/screen_medium/0/3125/5035618-yok1.jpg
+              screen_large_url: https://comicvine1.cbsistatic.com/uploads/screen_kubrick/0/3125/5035618-yok1.jpg
+              small_url: https://comicvine1.cbsistatic.com/uploads/scale_small/0/3125/5035618-yok1.jpg
+              super_url: https://comicvine1.cbsistatic.com/uploads/scale_large/0/3125/5035618-yok1.jpg
+              thumb_url: https://comicvine1.cbsistatic.com/uploads/scale_avatar/0/3125/5035618-yok1.jpg
+              tiny_url: https://comicvine1.cbsistatic.com/uploads/square_mini/0/3125/5035618-yok1.jpg
+              original_url: https://comicvine1.cbsistatic.com/uploads/original/0/3125/5035618-yok1.jpg
+              image_tags: All Images
+            last_issue:
+              api_detail_url: https://comicvine.gamespot.com/api/issue/4000-760197/
+              id: 760197
+              name: Engel und Falken
+              issue_number: "29"
+            name: Yoko Tsuno
+            publisher:
+              api_detail_url: https://comicvine.gamespot.com/api/publisher/4010-246/
+              id: 246
+              name: Carlsen Comics
+            site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-87872/
+            start_year: "1982"
+            resource_type: volume
