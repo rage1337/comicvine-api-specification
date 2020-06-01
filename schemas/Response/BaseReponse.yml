@@ -41,20 +41,4 @@ properties:
   # limit:
   # $ref: "../openapi.yml#/components/parameters/limit"
   # offset:
-  # $ref: "../openapi.yml#/components/parameters/limit"
-  results:
-    description: Zero or more items that match the filters specified
-    oneOf:
-      - $ref: ./Volume.yml
-      - $ref: ./Issue.yml
-      - $ref: ./Person.yml
-      - $ref: ./Character.yml
-      - type: array
-        items:
-          anyOf:
-            - $ref: ./Volume.yml
-            - $ref: ./Issue.yml
-            - $ref: ./Person.yml
-            - $ref: ./Character.yml
-    # example:
-    #   $ref: ../examples/response.yml
+  # $ref: "../openapi.yml#/components/parameters/offset"

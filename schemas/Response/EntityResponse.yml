@@ -1,0 +1,11 @@
+allOf:
+  - $ref: ./BaseResponse.yml
+  - type: object
+    properties:
+      results:
+        description: An Entity that match the filters specified
+        oneOf:
+          - $ref: ../Volume.yml
+          - $ref: ../Issue.yml
+          - $ref: ../Person.yml
+          - $ref: ../Character.yml

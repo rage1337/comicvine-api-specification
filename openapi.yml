@@ -23,7 +23,7 @@ tags:
     description: Endpoints for a comic volume
 
 paths:
-  /character:
+  /character/{id}:
     get:
       summary: Get a particular character
       operationId: get_character
@@ -39,13 +39,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               # TODO example
               # example:
               #   $ref: "./examples/issue.yml"
             application/xml:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               # TODO example
               # example:
               #   $ref: "./examples/character.yml"
@@ -79,12 +79,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/issue.yml"
             application/xml:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/issue.yml"
   # TODO
@@ -122,12 +122,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/person.yml"
             application/xml:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/person.yml"
   # TODO
@@ -168,12 +168,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
                 $ref: "./examples/response.yml"
             application/xml:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
                 $ref: "./examples/response.yml"
 
@@ -216,12 +216,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/volume.yml"
             application/xml:
               schema:
-                $ref: "./schemas/Response.yml"
+                $ref: "./schemas/Response/EntityResponse.yml"
               example:
                 $ref: "./examples/volume.yml"
   # TODO

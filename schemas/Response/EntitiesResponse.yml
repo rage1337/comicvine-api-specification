@@ -1,0 +1,20 @@
+allOf:
+  - $ref: ./BaseResponse.yml
+  - type: object
+    properties:
+      results:
+        description: A list of Entities that match the filters specified
+        type: array
+        items:
+          anyOf:
+            - $ref: ../Volume.yml
+            - $ref: ../Issue.yml
+            - $ref: ../Person.yml
+            - $ref: ../Character.yml
+          discriminator:
+            propertyName: resource_type
+            mapping:
+              volume: ../Volume.yml
+              character: ../Character.yml
+              issue: ../Issue.yml
+              person: ../Person.yml
