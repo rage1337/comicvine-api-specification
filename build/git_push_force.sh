@@ -31,20 +31,14 @@ fi
 
 repo_loc=../../target/
 
-# Sets the new remote
-git_remote=$(git remote)
-if [ "$git_remote" = "" ]; then # git remote not defined
-
-    if [ "$GIT_TOKEN" = "" ]; then
-        echo "[INFO] \$GIT_TOKEN (environment variable) is not set. Using the git credential in your environment."
-        git clone https://${git_host}/${git_user_id}/${git_repo_id}.git ${repo_loc}
-    else
-        git clone https://${git_user_id}:${GIT_TOKEN}@${git_host}/${git_user_id}/${git_repo_id}.git ${repo_loc}
-    fi
-
+if [ "$GIT_TOKEN" = "" ]; then
+    echo "[INFO] \$GIT_TOKEN (environment variable) is not set. Using the git credential in your environment."
+    git clone https://${git_host}/${git_user_id}/${git_repo_id}.git ${repo_loc}
+else
+    git clone https://${git_user_id}:${GIT_TOKEN}@${git_host}/${git_user_id}/${git_repo_id}.git ${repo_loc}
 fi
 
-mv ./* ${repo_loc}
+cp -r ./* ${repo_loc}
 
 cd ${repo_loc}
 
