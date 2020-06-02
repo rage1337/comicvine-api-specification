@@ -170,7 +170,7 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
-                $ref: "./examples/response.yml"
+                $ref: "./examples/search.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response/EntitiesResponse.yml"
