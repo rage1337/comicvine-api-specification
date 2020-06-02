@@ -5,9 +5,4 @@ allOf:
       results:
         description: A list of Entities that match the filters specified
         type: array
-        items:
-          anyOf:
-            - $ref: ../Volume.yml
-            - $ref: ../Issue.yml
-            - $ref: ../Person.yml
-            - $ref: ../Character.yml
+        items: {}
