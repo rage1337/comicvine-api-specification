@@ -175,7 +175,7 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
-                $ref: "./examples/response.yml"
+                $ref: "./examples/search.yml"
 
   # TODO
   #  /story_arc:
