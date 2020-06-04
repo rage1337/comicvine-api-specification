@@ -15,7 +15,7 @@ properties:
   aliases:
     description: List of aliases the entity is known by. A \n (newline) seperates each alias.
     type: string
-    example: Joko Zuno
+    example: "Anthony Edward Stark\r\nTony Stark\r\nGolden Avenger\r\nShellhead\r\nArmored Avenger\r\nTetsujin\r\nSpare Parts Man\r\nIron Knight\r\nDirector Stark\r\nCobalt Man\r\nThe Progenitor\r\nInvincible Iron Man\r\nIron Maniac\r\nIron Avenger\r\nCrimson Dynamo\r\nMerchant of Death"
   api_detail_url:
     description: URL pointing to the entity detail resource.
     type: string
@@ -42,3 +42,5 @@ properties:
     description: Date the entity was last updated on Comic Vine.
     type: string
     example: "2016-01-26 17:53:02"
+  image:
+    $ref: ./Image.yml

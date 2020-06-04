@@ -5,12 +5,12 @@ allOf:
     properties:
       characters:
         description: A list of characters that appear in this volume.
-        # type: array
-        # items: {}
+        type: array
+        items: {}
       concepts:
         description: A list of concepts that appear in this volume.
-        # type: array
-        # items: {}
+        type: array
+        items: {}
       count_of_issues:
         description: Number of issues included in this volume.
         type: integer
@@ -24,16 +24,16 @@ allOf:
         description: The last issue in this volume.
       locations:
         description: List of locations that appeared in this volume.
-        # type: array
-        # items: {}
+        type: array
+        items: {}
       objects:
         description: List of objects that appeared in this volume.
-        # type: array
-        # items: {}
+        type: array
+        items: {}
       people:
         description: List of people that worked on this volume.
-        # type: array
-        # items: {}
+        type: array
+        items: {}
       publisher:
         description: The primary publisher a volume is attached to.
       start_year:

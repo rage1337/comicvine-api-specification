@@ -1,0 +1,51 @@
+type: object
+description: Object representing the URLs for the images illustrating the entity.
+properties:
+  icon_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/square_avatar/5/53387/2638218-2638217-1_nl_v02.jpg
+  medium_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/scale_medium/5/53387/2638218-2638217-1_nl_v02.jpg
+  screen_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/screen_medium/5/53387/2638218-2638217-1_nl_v02.jpg
+  screen_large_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/screen_kubrick/5/53387/2638218-2638217-1_nl_v02.jpg
+  small_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/scale_small/5/53387/2638218-2638217-1_nl_v02.jpg
+  super_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/scale_large/5/53387/2638218-2638217-1_nl_v02.jpg
+  thumb_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/scale_avatar/5/53387/2638218-2638217-1_nl_v02.jpg
+  tiny_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/square_mini/5/53387/2638218-2638217-1_nl_v02.jpg
+  original_url:
+    description: Image URL
+    type: string
+    format: uri
+    example: https://comicvine1.cbsistatic.com/uploads/original/5/53387/2638218-2638217-1_nl_v02.jpg
+  image_tags:
+    type: string
+    example: All Images

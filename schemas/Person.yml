@@ -19,8 +19,6 @@ allOf:
         description: "Gender of the person. Available options are: Male, Female, Other"
       hometown:
         description: City or town the person resides in.
-      image:
-        description: Main image of the person.
       issue_credits:
         description: List of issues this person appears in.
       story_arc_credits:

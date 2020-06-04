@@ -5,43 +5,78 @@ allOf:
     properties:
       birth:
         description: A date, if one exists, that the character was born on. Not an origin date.
+        type: string
+        example: "Feb 19, 1972"
       character_enemies:
         description: List of characters that are enemies with this character.
+        type:
+          $ref: ./Characters.yml
       character_friends:
         description: List of characters that are friends with this character.
+        type:
+          $ref: ./Characters.yml
       count_of_issue_appearances:
         description: Number of issues this character appears in.
+        type: integer
+        format: int32
+        example: 17949
       creators:
         description: List of the real life people who created this character.
+        type:
+          $ref: ./People.yml
       first_appeared_in_issue:
         description: Issue where the character made its first appearance.
       gender:
-        description: "Gender of the character. Available options are: Male, Female, Other"
-      image:
-        description: Main image of the character.
+        description: "Gender of the character. Available options are: Male (1), Female (2), Other (3)"
+        type: integer
+        format: int32
+        enum: [1, 2, 3]
+        example: 3
       issue_credits:
         description: List of issues this character appears in.
+        type:
+          $ref: ./Issues.yml
       issues_died_in:
         description: List of issues this character died in.
+        type:
+          $ref: ./Issues.yml
       movies:
         description: Movies the character was in.
+        # TODO: replace with Movies when done
+        type: array
+        items: {}
       origin:
         description: The origin of the character. Human, Alien, Robot ...etc
+        # TODO: replace with Origin when done
       powers:
         description: List of super powers a character has.
       publisher:
         description: The primary publisher a character is attached to.
       real_name:
         description: Real name of the character.
-      site_detail_url:
-        description: URL pointing to the character on Giant Bomb.
+        type: string
+        example: "Bruce Wayne"
       story_arc_credits:
         description: List of story arcs this character appears in.
+        # TODO: replace with StoryArc when done
+        type: array
+        items: {}
       team_enemies:
         description: List of teams that are enemies of this character.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       team_friends:
         description: List of teams that are friends with this character.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       teams:
         description: List of teams this character is a member of.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       volume_credits:
         description: List of comic volumes this character appears in.
+        type:
+          $ref: ./Volumes.yml
