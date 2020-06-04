@@ -230,12 +230,20 @@ components:
   schemas:
     Character:
       $ref: "./schemas/Character.yml"
+    Characters:
+      $ref: "./schemas/Characters.yml"
     Issue:
       $ref: "./schemas/Issue.yml"
+    Issues:
+      $ref: "./schemas/Issues.yml"
+    People:
+      $ref: "./schemas/People.yml"
     Person:
       $ref: "./schemas/Person.yml"
     Volume:
       $ref: "./schemas/Volume.yml"
+    Volumes:
+      $ref: "./schemas/Volumes.yml"
   # Authentication Mechanisms
   securitySchemes:
     # Define API Key Authentication
