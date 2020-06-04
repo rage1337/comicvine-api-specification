@@ -46,3 +46,4 @@ allOf:
         description: The first year this volume appeared in comics.
         type: string
         example: "2007"
+    example: ../examples/schemas/volume.yml

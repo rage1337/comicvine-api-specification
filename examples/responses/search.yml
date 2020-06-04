@@ -1,0 +1,9 @@
+error: OK
+limit: 10
+offset: 0
+number_of_page_results: 10
+number_of_total_results: 227
+status_code: 1
+results:
+  $ref: "../schemas/results.yml"
+version: "1.0"

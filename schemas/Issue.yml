@@ -97,3 +97,4 @@ allOf:
         description: The volume this issue is a part of.
         type:
           $ref: ./Volume.yml
+    example: ../examples/schemas/issue.yml

@@ -28,3 +28,4 @@ allOf:
         type: string
         format: uri
         example: https://person.example.com/
+    example: ../examples/schemas/person.yml

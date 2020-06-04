@@ -1,0 +1,258 @@
+aliases:
+api_detail_url: https://comicvine.gamespot.com/api/volume/4050-26984/
+characters:
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-63316/
+    id: 63316
+    name: Yoko Tsuno
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4005-63316/
+    count: "13"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-85989/
+    id: 85989
+    name: Vic Video
+    site_detail_url: https://comicvine.gamespot.com/vic-video/4005-85989/
+    count: "11"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-85990/
+    id: 85990
+    name: Pol Pitron
+    site_detail_url: https://comicvine.gamespot.com/pol-pitron/4005-85990/
+    count: "11"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102444/
+    id: 102444
+    name: Monya
+    site_detail_url: https://comicvine.gamespot.com/monya/4005-102444/
+    count: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102442/
+    id: 102442
+    name: Cecilia
+    site_detail_url: https://comicvine.gamespot.com/cecilia/4005-102442/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-102443/
+    id: 102443
+    name: Aoki
+    site_detail_url: https://comicvine.gamespot.com/aoki/4005-102443/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/character/4005-130071/
+    id: 130071
+    name: Khany
+    site_detail_url: https://comicvine.gamespot.com/khany/4005-130071/
+    count: "1"
+concepts:
+  - api_detail_url: https://comicvine.gamespot.com/api/concept/4015-55712/
+    id: 55712
+    name: Time Travel
+    site_detail_url: https://comicvine.gamespot.com/time-travel/4015-55712/
+    count: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/concept/4015-56579/
+    id: 56579
+    name: Translated Comic
+    site_detail_url: https://comicvine.gamespot.com/translated-comic/4015-56579/
+    count: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/concept/4015-46567/
+    id: 46567
+    name: Aliens
+    site_detail_url: https://comicvine.gamespot.com/aliens/4015-46567/
+    count: "1"
+count_of_issues: 13
+date_added: "2009-07-05 17:07:48"
+date_last_updated: "2012-08-07 21:26:24"
+deck:
+description: <p>Besides being pretty, intelligent and courageous, Yoko Tsuno is
+  an electronics engineer. This specialization draws her and friends Pol and Vic
+  into adventures that cross the border between fantasy and science fiction. Yoko
+  crosses the globe and travels through time and space; but no matter where her
+  exploits take her, the young girl always remains faithful to herself, never forgetting
+  values such as loyalty, friendship and respect for life.</p><p>Yoko Tsuno first
+  appeared in "<a data-ref-id="4050-27781" href="/spirou/4050-27781/" slug="spirou">Spirou</a>"
+  magazine on 24 September, 1970. Her stories are published in eight-page instalments
+  and then reprinted in album form. The first album was published in 1972 . A total
+  of 25 albums was published between 1972 and 2010. Creator Roger Leloup has also
+  written a novel detailing the childhood and early years of the character. Seven
+  albums have been translated in English.</p>
+first_issue:
+  api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162967/
+  id: 162967
+  name: On the Edge of Life
+  issue_number: "1"
+id: 26984
+image:
+  icon_url: https://comicvine1.cbsistatic.com/uploads/square_avatar/2/27783/864915-yoko_tsuno_1.jpg
+  medium_url: https://comicvine1.cbsistatic.com/uploads/scale_medium/2/27783/864915-yoko_tsuno_1.jpg
+  screen_url: https://comicvine1.cbsistatic.com/uploads/screen_medium/2/27783/864915-yoko_tsuno_1.jpg
+  screen_large_url: https://comicvine1.cbsistatic.com/uploads/screen_kubrick/2/27783/864915-yoko_tsuno_1.jpg
+  small_url: https://comicvine1.cbsistatic.com/uploads/scale_small/2/27783/864915-yoko_tsuno_1.jpg
+  super_url: https://comicvine1.cbsistatic.com/uploads/scale_large/2/27783/864915-yoko_tsuno_1.jpg
+  thumb_url: https://comicvine1.cbsistatic.com/uploads/scale_avatar/2/27783/864915-yoko_tsuno_1.jpg
+  tiny_url: https://comicvine1.cbsistatic.com/uploads/square_mini/2/27783/864915-yoko_tsuno_1.jpg
+  original_url: https://comicvine1.cbsistatic.com/uploads/original/2/27783/864915-yoko_tsuno_1.jpg
+  image_tags: All Images
+issues:
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162967/
+    id: 162967
+    name: On the Edge of Life
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-1-on-the-edge-of-life/4000-162967/
+    issue_number: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162968/
+    id: 162968
+    name: The Time Spiral
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-2-the-time-spiral/4000-162968/
+    issue_number: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162969/
+    id: 162969
+    name: The Prey and the Ghost
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-3-the-prey-and-the-ghost/4000-162969/
+    issue_number: "3"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-162971/
+    id: 162971
+    name: Daughter of the Wind
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-4-daughter-of-the-wind/4000-162971/
+    issue_number: "4"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-334646/
+    id: 334646
+    name: The Dragon of Hong Kong
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-5-the-dragon-of-hong-kong/4000-334646/
+    issue_number: "5"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-334647/
+    id: 334647
+    name: The Morning of the World
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-6-the-morning-of-the-world/4000-334647/
+    issue_number: "6"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-349579/
+    id: 349579
+    name: The Curious Trio
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-7-the-curious-trio/4000-349579/
+    issue_number: "7"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-431692/
+    id: 431692
+    name: The Devil's Organ
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-8-the-devil-s-organ/4000-431692/
+    issue_number: "8"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-453592/
+    id: 453592
+    name: The Forge of Vulcan
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-9-the-forge-of-vulcan/4000-453592/
+    issue_number: "9"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-488157/
+    id: 488157
+    name: Message For Eternity
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-10-message-for-eternity/4000-488157/
+    issue_number: "10"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-532665/
+    id: 532665
+    name: The Three Suns of Vinea
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-11-the-three-suns-of-vinea/4000-532665/
+    issue_number: "11"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-595648/
+    id: 595648
+    name: The Titans
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-12-the-titans/4000-595648/
+    issue_number: "12"
+  - api_detail_url: https://comicvine.gamespot.com/api/issue/4000-668393/
+    id: 668393
+    name: The Light of Ixo
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno-13-the-light-of-ixo/4000-668393/
+    issue_number: "13"
+last_issue:
+  api_detail_url: https://comicvine.gamespot.com/api/issue/4000-668393/
+  id: 668393
+  name: The Light of Ixo
+  issue_number: "13"
+locations:
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-56099/
+    id: 56099
+    name: Europe
+    site_detail_url: https://comicvine.gamespot.com/europe/4020-56099/
+    count: "5"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-55916/
+    id: 55916
+    name: Belgium
+    site_detail_url: https://comicvine.gamespot.com/belgium/4020-55916/
+    count: "4"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-56519/
+    id: 56519
+    name: Indonesia
+    site_detail_url: https://comicvine.gamespot.com/indonesia/4020-56519/
+    count: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-55799/
+    id: 55799
+    name: Hong Kong
+    site_detail_url: https://comicvine.gamespot.com/hong-kong/4020-55799/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-55911/
+    id: 55911
+    name: Scotland
+    site_detail_url: https://comicvine.gamespot.com/scotland/4020-55911/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-59051/
+    id: 59051
+    name: Borneo
+    site_detail_url: https://comicvine.gamespot.com/borneo/4020-59051/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-59356/
+    id: 59356
+    name: Bali
+    site_detail_url: https://comicvine.gamespot.com/bali/4020-59356/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-59357/
+    id: 59357
+    name: Rhine Valley
+    site_detail_url: https://comicvine.gamespot.com/rhine-valley/4020-59357/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-61777/
+    id: 61777
+    name: Rhine River
+    site_detail_url: https://comicvine.gamespot.com/rhine-river/4020-61777/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/location/4020-63048/
+    id: 63048
+    name: Vinea
+    site_detail_url: https://comicvine.gamespot.com/vinea/4020-63048/
+    count: "1"
+name: Yoko Tsuno
+objects:
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-63316/
+    id: 63316
+    name: Yoko Tsuno
+    site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4005-63316/
+    count: "13"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-85989/
+    id: 85989
+    name: Vic Video
+    site_detail_url: https://comicvine.gamespot.com/vic-video/4005-85989/
+    count: "11"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-85990/
+    id: 85990
+    name: Pol Pitron
+    site_detail_url: https://comicvine.gamespot.com/pol-pitron/4005-85990/
+    count: "11"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-102444/
+    id: 102444
+    name: Monya
+    site_detail_url: https://comicvine.gamespot.com/monya/4005-102444/
+    count: "2"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-102442/
+    id: 102442
+    name: Cecilia
+    site_detail_url: https://comicvine.gamespot.com/cecilia/4005-102442/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-102443/
+    id: 102443
+    name: Aoki
+    site_detail_url: https://comicvine.gamespot.com/aoki/4005-102443/
+    count: "1"
+  - api_detail_url: https://comicvine.gamespot.com/api/object/4005-130071/
+    id: 130071
+    name: Khany
+    site_detail_url: https://comicvine.gamespot.com/khany/4005-130071/
+    count: "1"
+people:
+  - api_detail_url: https://comicvine.gamespot.com/api/person/4040-66060/
+    id: 66060
+    name: Roger Leloup
+    site_detail_url: https://comicvine.gamespot.com/roger-leloup/4040-66060/
+    count: "13"
+publisher:
+  api_detail_url: https://comicvine.gamespot.com/api/publisher/4010-2344/
+  id: 2344
+  name: Cinebook
+site_detail_url: https://comicvine.gamespot.com/yoko-tsuno/4050-26984/
+start_year: "2007"

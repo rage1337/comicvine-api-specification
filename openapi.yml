@@ -81,12 +81,12 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/issue.yml"
+                $ref: "./examples/responses/issue.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/issue.yml"
+                $ref: "./examples/responses/issue.yml"
   # TODO
   #  /issues:
   # TODO
@@ -124,12 +124,12 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/person.yml"
+                $ref: "./examples/responses/person.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/person.yml"
+                $ref: "./examples/responses/person.yml"
   # TODO
   #  /people:
   # TODO
@@ -170,12 +170,12 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
-                $ref: "./examples/search.yml"
+                $ref: "./examples/responses/search.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response/EntitiesResponse.yml"
               example:
-                $ref: "./examples/search.yml"
+                $ref: "./examples/responses/search.yml"
 
   # TODO
   #  /story_arc:
@@ -218,12 +218,12 @@ paths:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/volume.yml"
+                $ref: "./examples/responses/volume.yml"
             application/xml:
               schema:
                 $ref: "./schemas/Response/EntityResponse.yml"
               example:
-                $ref: "./examples/volume.yml"
+                $ref: "./examples/responses/volume.yml"
   # TODO
   #  /volumes
 components:
