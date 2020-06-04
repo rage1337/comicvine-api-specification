@@ -5,45 +5,95 @@ allOf:
     properties:
       character_credits:
         description: A list of characters that appear in this issue.
+        type:
+          $ref: ./Characters.yml
       characters_died_in:
         description: A list of characters that died in this issue.
+        type:
+          $ref: ./Characters.yml
       concept_credits:
         description: A list of concepts that appear in this issue.
+        # TODO: replace with Concepts when done
+        type: array
+        items: {}
       cover_date:
         description: The publish date printed on the cover of an issue.
+        type: string
+        format: date
+        example: "1995-01-31"
       disbanded_teams:
         description: A list of teams that disbanded in this issue.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       first_appearance_characters:
         description: A list of characters in which this issue is the first appearance of the character.
+        type:
+          $ref: ./Characters.yml
       first_appearance_concepts:
         description: A list of concepts in which this issue is the first appearance of the concept.
+        # TODO: replace with Concepts when done
+        type: array
+        items: {}
       first_appearance_locations:
         description: A list of locations in which this issue is the first appearance of the location.
+        # TODO: replace with Locations when done
+        type: array
+        items: {}
       first_appearance_objects:
         description: A list of objects in which this issue is the first appearance of the object.
+        # TODO: replace with Objects when done
+        type: array
+        items: {}
       first_appearance_storyarcs:
         description: A list of storyarcs in which this issue is the first appearance of the story arc.
+        # TODO: replace with StoryArcs when done
+        type: array
+        items: {}
       first_appearance_teams:
         description: A list of teams in which this issue is the first appearance of the team.
-      # cannot be null
-      # has_staff_review:
-      image:
-        description: Main image of the issue.
+      has_staff_review:
+        type: boolean
+        example: true
       issue_number:
         description: The number assigned to the issue within the volume set.
+        type: string
+        format: "1"
       location_credits:
         description: List of locations that appeared in this issue.
+        # TODO: replace with Locations when done
+        type: array
+        items: {}
       object_credits:
         description: List of objects that appeared in this issue.
+        # TODO: replace with Objects when done
+        type: array
+        items: {}
       person_credits:
         description: List of people that worked on this issue.
+        type:
+          $ref: ./People.yml
       store_date:
         description: The date the issue was first sold in stores.
+        type: string
+        format: date
+        example: "1995-01-31"
       story_arc_credits:
         description: List of story arcs this issue appears in.
+        # TODO: replace with StoryArcs when done
+        type: array
+        items: {}
       team_credits:
         description: List of teams that appear in this issue.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       teams_disbanded_in:
         description: List of teams that disbanded in this issue.
+        # TODO: replace with Teams when done
+        type: array
+        items: {}
       volume:
         description: The volume this issue is a part of.
+        type:
+          $ref: ./Volume.yml
