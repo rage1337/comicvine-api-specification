@@ -11,10 +11,6 @@ allOf:
         description: A list of concepts that appear in this issue.
       cover_date:
         description: The publish date printed on the cover of an issue.
-      deck:
-        description: Brief summary of the issue.
-      description:
-        description: Description of the issue.
       disbanded_teams:
         description: A list of teams that disbanded in this issue.
       first_appearance_characters:

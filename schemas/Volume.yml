@@ -5,16 +5,21 @@ allOf:
     properties:
       aliases:
         description: List of aliases the volume is known by. A \n (newline) seperates each alias.
-      character_credits:
+        type: string
+        example: "alias1\nalias2"
+      characters:
         description: A list of characters that appear in this volume.
-      concept_credits:
+        type: array
+        items: {}
+      concepts:
         description: A list of concepts that appear in this volume.
+        type: array
+        items: {}
       count_of_issues:
         description: Number of issues included in this volume.
-      deck:
-        description: Brief summary of the volume.
-      description:
-        description: Description of the volume.
+        type: integer
+        format: int32
+        example: 13
       first_issue:
         description: The first issue in this volume.
       image:
@@ -31,5 +36,7 @@ allOf:
         description: The primary publisher a volume is attached to.
       start_year:
         description: The first year this volume appeared in comics.
+        type: string
+        example: "2007"
       team_credits:
         description: List of teams that appear in this volume.

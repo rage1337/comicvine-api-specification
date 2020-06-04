@@ -13,10 +13,6 @@ allOf:
         description: Comic characters this person created.
       death:
         description: Date this person died on.
-      deck:
-        description: Brief summary of the person.
-      description:
-        description: Description of the person.
       email:
         description: The email of this person.
       gender:

@@ -13,10 +13,6 @@ allOf:
         description: Number of issues this character appears in.
       creators:
         description: List of the real life people who created this character.
-      deck:
-        description: Brief summary of the character.
-      description:
-        description: Description of the character.
       first_appeared_in_issue:
         description: Issue where the character made its first appearance.
       gender:
