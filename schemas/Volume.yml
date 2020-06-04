@@ -17,17 +17,11 @@ allOf:
         format: int32
         example: 13
       first_issue:
-        description: The first issue in this volume.
-        type:
-          $ref: ./Issue.yml
+        $ref: ./Issue.yml
       image:
-        description: Main image of the volume.
-        type:
-          $ref: ./Image.yml
+        $ref: ./Image.yml
       last_issue:
-        description: The last issue in this volume.
-        type:
-          $ref: ./Issue.yml
+        $ref: ./Issue.yml
       locations:
         description: List of locations that appeared in this volume.
         type: array

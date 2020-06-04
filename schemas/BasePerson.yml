@@ -24,10 +24,6 @@ allOf:
         type: array
         items: {}
       volume_credits:
-        description: List of comic volumes this person appears in.
-        type:
-          $ref: ./Volumes.yml
+        $ref: ./Volumes.yml
       issue_credits:
-        description: List of issues this person appears in.
-        type:
-          $ref: ./Issues.yml
+        $ref: ./Issues.yml

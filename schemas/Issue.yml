@@ -4,13 +4,9 @@ allOf:
     description: Object representing an issue
     properties:
       character_credits:
-        description: A list of characters that appear in this issue.
-        type:
-          $ref: ./Characters.yml
+        $ref: ./Characters.yml
       characters_died_in:
-        description: A list of characters that died in this issue.
-        type:
-          $ref: ./Characters.yml
+        $ref: ./Characters.yml
       concept_credits:
         description: A list of concepts that appear in this issue.
         # TODO: replace with Concepts when done
@@ -27,9 +23,7 @@ allOf:
         type: array
         items: {}
       first_appearance_characters:
-        description: A list of characters in which this issue is the first appearance of the character.
-        type:
-          $ref: ./Characters.yml
+        $ref: ./Characters.yml
       first_appearance_concepts:
         description: A list of concepts in which this issue is the first appearance of the concept.
         # TODO: replace with Concepts when done
@@ -70,9 +64,7 @@ allOf:
         type: array
         items: {}
       person_credits:
-        description: List of people that worked on this issue.
-        type:
-          $ref: ./People.yml
+        $ref: ./People.yml
       store_date:
         description: The date the issue was first sold in stores.
         type: string
@@ -94,7 +86,5 @@ allOf:
         type: array
         items: {}
       volume:
-        description: The volume this issue is a part of.
-        type:
-          $ref: ./Volume.yml
+        $ref: ./Volume.yml
     example: ../examples/schemas/issue.yml

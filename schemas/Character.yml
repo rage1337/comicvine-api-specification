@@ -5,25 +5,15 @@ allOf:
     description: Object representing a Character
     properties:
       character_enemies:
-        description: List of characters that are enemies with this character.
-        type:
-          $ref: ./Characters.yml
+        $ref: ./Characters.yml
       character_friends:
-        description: List of characters that are friends with this character.
-        type:
-          $ref: ./Characters.yml
+        $ref: ./Characters.yml
       creators:
-        description: List of the real life people who created this character.
-        type:
-          $ref: ./People.yml
+        $ref: ./People.yml
       first_appeared_in_issue:
-        description: Issue where the character made its first appearance.
-        type:
-          $ref: ./Issue.yml
+        $ref: ./Issue.yml
       issues_died_in:
-        description: List of issues this character died in.
-        type:
-          $ref: ./Issues.yml
+        $ref: ./Issues.yml
       movies:
         description: Movies the character was in.
         # TODO: replace with Movies when done
