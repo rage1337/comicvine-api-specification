@@ -1,29 +1,30 @@
 allOf:
   - $ref: ./BaseEntity.yml
+  - $ref: ./BasePerson.yml
   - type: object
     description: Object representing a Person
     properties:
-      birth:
-        description: A date, if one exists, that the person was born on. Not an origin date.
-      count_of_issue_appearances:
-        description: Number of issues this person appears in.
       country:
         description: Country the person resides in.
+        type: string
+        example: "UK"
       created_characters:
         description: Comic characters this person created.
       death:
         description: Date this person died on.
+        type: string
+        format: date
+        example: "2017-07-21"
       email:
         description: The email of this person.
-      gender:
-        description: "Gender of the person. Available options are: Male, Female, Other"
+        type: string
+        example: bruce@example.com
       hometown:
         description: City or town the person resides in.
-      issue_credits:
-        description: List of issues this person appears in.
-      story_arc_credits:
-        description: List of story arcs this person appears in.
-      volume_credits:
-        description: List of comic volumes this person appears in.
+        type: string
+        example: Vladivostok
       website:
         description: URL to the person website.
+        type: string
+        format: uri
+        example: https://person.example.com/

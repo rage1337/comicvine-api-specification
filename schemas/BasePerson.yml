@@ -1,0 +1,33 @@
+allOf:
+  - $ref: ./BaseEntity.yml
+  - type: object
+    description: Object representing the base for a person or character
+    properties:
+      birth:
+        description: A date, if one exists, that the person was born on. Not an origin date.
+        type: string
+        example: "Feb 19, 1972"
+      count_of_issue_appearances:
+        description: Number of issues this person appears in.
+        type: integer
+        format: int32
+        example: 17949
+      gender:
+        description: "Gender of the person. Available options are: Male (1), Female (2), Other (3)"
+        type: integer
+        format: int32
+        enum: [1, 2, 3]
+        example: 3
+      story_arc_credits:
+        description: List of story arcs this person appears in.
+        # TODO: replace with StoryArc when done
+        type: array
+        items: {}
+      volume_credits:
+        description: List of comic volumes this person appears in.
+        type:
+          $ref: ./Volumes.yml
+      issue_credits:
+        description: List of issues this person appears in.
+        type:
+          $ref: ./Issues.yml
