@@ -227,6 +227,15 @@ paths:
   # TODO
   #  /volumes
 components:
+  schemas:
+    Character:
+      $ref: "./schemas/Character.yml"
+    Issue:
+      $ref: "./schemas/Issue.yml"
+    Person:
+      $ref: "./schemas/Person.yml"
+    Volume:
+      $ref: "./schemas/Volume.yml"
   # Authentication Mechanisms
   securitySchemes:
     # Define API Key Authentication
