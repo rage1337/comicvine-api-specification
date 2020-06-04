@@ -30,9 +30,9 @@ paths:
       tags:
         - character
       parameters:
-        - $ref: ./parameters/id.yml
-        - $ref: ./parameters/format.yml
-        - $ref: ./parameters/field_list.yml
+        - $ref: "#/components/parameters/id"
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
       responses:
         "200":
           description: Information about the character
@@ -70,9 +70,9 @@ paths:
       tags:
         - issue
       parameters:
-        - $ref: ./parameters/id.yml
-        - $ref: ./parameters/format.yml
-        - $ref: ./parameters/field_list.yml
+        - $ref: "#/components/parameters/id"
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
       responses:
         "200":
           description: Information about the issue
@@ -113,9 +113,9 @@ paths:
       tags:
         - person
       parameters:
-        - $ref: ./parameters/id.yml
-        - $ref: ./parameters/format.yml
-        - $ref: ./parameters/field_list.yml
+        - $ref: "#/components/parameters/id"
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
       responses:
         "200":
           description: Information about the person
@@ -156,12 +156,12 @@ paths:
       tags:
         - search
       parameters:
-        - $ref: ./parameters/format.yml
-        - $ref: ./parameters/query.yml
-        - $ref: ./parameters/field_list.yml
-        - $ref: ./parameters/limit.yml
-        - $ref: ./parameters/offset.yml
-        - $ref: ./parameters/resources.yml
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/query"
+        - $ref: "#/components/parameters/field_list"
+        - $ref: "#/components/parameters/limit"
+        - $ref: "#/components/parameters/offset"
+        - $ref: "#/components/parameters/resources"
       responses:
         "200":
           description: Search Results
@@ -207,9 +207,9 @@ paths:
       tags:
         - volume
       parameters:
-        - $ref: ./parameters/id.yml
-        - $ref: ./parameters/format.yml
-        - $ref: ./parameters/field_list.yml
+        - $ref: "#/components/parameters/id"
+        - $ref: "#/components/parameters/format"
+        - $ref: "#/components/parameters/field_list"
       responses:
         "200":
           description: Information about the volume
@@ -227,6 +227,25 @@ paths:
   # TODO
   #  /volumes
 components:
+  parameters:
+    field_list:
+      $ref: "./parameters/field_list.yml"
+    filter:
+      $ref: "./parameters/filter.yml"
+    format:
+      $ref: "./parameters/format.yml"
+    id:
+      $ref: "./parameters/id.yml"
+    limit:
+      $ref: "./parameters/limit.yml"
+    offset:
+      $ref: "./parameters/offset.yml"
+    query:
+      $ref: "./parameters/query.yml"
+    resources:
+      $ref: "./parameters/resources.yml"
+    sort:
+      $ref: "./parameters/sort.yml"
   schemas:
     Character:
       $ref: "./schemas/Character.yml"
