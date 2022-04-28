@@ -25,6 +25,10 @@ properties:
     description: Description of the entity.
     type: string
     example: <p>A total of 25 albums was published between 1972 and 2010. Creator Roger Leloup has also written a novel detailing the childhood and early years of the character. Seven albums have been translated in English.</p>
+  count:
+    description: Unclear, low range number
+    type: string
+    example: 123
   deck:
     description: Brief summary of the Entity.
     type: string
