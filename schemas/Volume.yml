@@ -20,6 +20,10 @@ allOf:
         $ref: ./Issue.yml
       image:
         $ref: ./Image.yml
+      issues:
+        type: array
+        items:
+          $ref: ./Issue.yml
       last_issue:
         $ref: ./Issue.yml
       locations:
