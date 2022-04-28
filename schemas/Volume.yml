@@ -5,8 +5,7 @@ allOf:
     properties:
       characters:
         description: A list of characters that appear in this volume.
-        type: array
-        items: {}
+        $ref: ./Characters.yml
       concepts:
         description: A list of concepts that appear in this volume.
         type: array
@@ -21,9 +20,7 @@ allOf:
       image:
         $ref: ./Image.yml
       issues:
-        type: array
-        items:
-          $ref: ./Issue.yml
+        $ref: ./Issues.yml
       last_issue:
         $ref: ./Issue.yml
       locations:
@@ -36,8 +33,7 @@ allOf:
         items: {}
       people:
         description: List of people that worked on this volume.
-        type: array
-        items: {}
+        $ref: ./People.yml
       publisher:
         description: The primary publisher a volume is attached to.
       start_year:
